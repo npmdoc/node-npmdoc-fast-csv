@@ -1,0 +1,2870 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="http://c2fo.github.com/fast-csv/index.html">fast-csv (v2.4.0)</a>
+</h1>
+<h4>CSV parser and writer</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv">module fast-csv</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.createReadStream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>createReadStream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.createWriteStream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>createWriteStream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended">
+            function <span class="apidocSignatureSpan">fast-csv.</span>extended
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.format">
+            function <span class="apidocSignatureSpan">fast-csv.</span>format
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromPath">
+            function <span class="apidocSignatureSpan">fast-csv.</span>fromPath
+            <span class="apidocSignatureSpan">(location, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromStream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>fromStream
+            <span class="apidocSignatureSpan">(stream, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromString">
+            function <span class="apidocSignatureSpan">fast-csv.</span>fromString
+            <span class="apidocSignatureSpan">(string, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse">
+            function <span class="apidocSignatureSpan">fast-csv.</span>parse
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.write">
+            function <span class="apidocSignatureSpan">fast-csv.</span>write
+            <span class="apidocSignatureSpan">(arr, options, ws)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToBuffer">
+            function <span class="apidocSignatureSpan">fast-csv.</span>writeToBuffer
+            <span class="apidocSignatureSpan">(arr, options, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToPath">
+            function <span class="apidocSignatureSpan">fast-csv.</span>writeToPath
+            <span class="apidocSignatureSpan">(path, arr, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToStream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>writeToStream
+            <span class="apidocSignatureSpan">(ws, arr, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToString">
+            function <span class="apidocSignatureSpan">fast-csv.</span>writeToString
+            <span class="apidocSignatureSpan">(arr, options, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.extended">module fast-csv.extended</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.extended">
+            function <span class="apidocSignatureSpan">fast-csv.</span>extended
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.asyncEach">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>asyncEach
+            <span class="apidocSignatureSpan">(arr, iter, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.contains">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>contains
+            <span class="apidocSignatureSpan">(arr, obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.containsAt">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>containsAt
+            <span class="apidocSignatureSpan">(arr, obj, index)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.deepEqual">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>deepEqual
+            <span class="apidocSignatureSpan">(actual, expected)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.deepMerge">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>deepMerge
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.define">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>define
+            <span class="apidocSignatureSpan">(tester, decorate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.escape">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>escape
+            <span class="apidocSignatureSpan">(str, except)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.expose">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>expose
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.extend">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>extend
+            <span class="apidocSignatureSpan">(supr)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.format">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>format
+            <span class="apidocSignatureSpan">(str, obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.has">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>has
+            <span class="apidocSignatureSpan">(obj, prop)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.instanceOf">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>instanceOf
+            <span class="apidocSignatureSpan">(obj, clazz)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isArguments">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isArguments
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isArray">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isArray
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isBoolean">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isBoolean
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isDate">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isDate
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isDefined">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isDefined
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isEmpty">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isEmpty
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isEq">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isEq
+            <span class="apidocSignatureSpan">(obj, obj2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isFalse">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isFalse
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isFunction">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isFunction
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isGt">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isGt
+            <span class="apidocSignatureSpan">(obj, obj2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isGte">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isGte
+            <span class="apidocSignatureSpan">(obj, obj2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isHash">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isHash
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isIn">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isIn
+            <span class="apidocSignatureSpan">(obj, arr)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isLength">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isLength
+            <span class="apidocSignatureSpan">(obj, l)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isLike">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isLike
+            <span class="apidocSignatureSpan">(obj, reg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isLt">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isLt
+            <span class="apidocSignatureSpan">(obj, obj2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isLte">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isLte
+            <span class="apidocSignatureSpan">(obj, obj2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isNeq">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNeq
+            <span class="apidocSignatureSpan">(obj, obj2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isNotIn">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNotIn
+            <span class="apidocSignatureSpan">(obj, arr)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isNotLength">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNotLength
+            <span class="apidocSignatureSpan">(obj, l)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isNotLike">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNotLike
+            <span class="apidocSignatureSpan">(obj, reg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isNotNull">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNotNull
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isNull">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNull
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isNumber">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNumber
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isObject">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isObject
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isRegExp">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isRegExp
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isSeq">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isSeq
+            <span class="apidocSignatureSpan">(obj, obj2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isSneq">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isSneq
+            <span class="apidocSignatureSpan">(obj, obj2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isString">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isString
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isTrue">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isTrue
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isUndefined">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isUndefined
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.isUndefinedOrNull">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>isUndefinedOrNull
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.keys">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>keys
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.merge">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>merge
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.multiply">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>multiply
+            <span class="apidocSignatureSpan">(str, times)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.notContains">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>notContains
+            <span class="apidocSignatureSpan">(arr, obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.notContainsAt">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>notContainsAt
+            <span class="apidocSignatureSpan">(arr, obj, index)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.notHas">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>notHas
+            <span class="apidocSignatureSpan">(obj, prop)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.omit">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>omit
+            <span class="apidocSignatureSpan">(hash, omitted)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.pad">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>pad
+            <span class="apidocSignatureSpan">(string, length, ch, end)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.register">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>register
+            <span class="apidocSignatureSpan">(alias, extendWith)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.spreadArgs">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>spreadArgs
+            <span class="apidocSignatureSpan">(f, args, scope)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.style">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>style
+            <span class="apidocSignatureSpan">(str, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.switcher">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>switcher
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.tester">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>tester
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.toArray">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>toArray
+            <span class="apidocSignatureSpan">(testStr, delim)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.trim">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>trim
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.trimLeft">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>trimLeft
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.trimRight">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>trimRight
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.extended.truncate">
+            function <span class="apidocSignatureSpan">fast-csv.extended.</span>truncate
+            <span class="apidocSignatureSpan">(string, length, end)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">fast-csv.extended.</span>__defined__</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">fast-csv.extended.</span>characters</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">fast-csv.extended.</span>hash</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">fast-csv.extended.</span>LINE_BREAK</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.format">module fast-csv.format</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.format.format">
+            function <span class="apidocSignatureSpan">fast-csv.</span>format
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.format.createWriteStream">
+            function <span class="apidocSignatureSpan">fast-csv.format.</span>createWriteStream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.format.write">
+            function <span class="apidocSignatureSpan">fast-csv.format.</span>write
+            <span class="apidocSignatureSpan">(arr, options, ws)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.format.writeToBuffer">
+            function <span class="apidocSignatureSpan">fast-csv.format.</span>writeToBuffer
+            <span class="apidocSignatureSpan">(arr, options, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.format.writeToPath">
+            function <span class="apidocSignatureSpan">fast-csv.format.</span>writeToPath
+            <span class="apidocSignatureSpan">(path, arr, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.format.writeToStream">
+            function <span class="apidocSignatureSpan">fast-csv.format.</span>writeToStream
+            <span class="apidocSignatureSpan">(ws, arr, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.format.writeToString">
+            function <span class="apidocSignatureSpan">fast-csv.format.</span>writeToString
+            <span class="apidocSignatureSpan">(arr, options, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv" id="apidoc.module.fast-csv">module fast-csv</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.createReadStream" id="apidoc.element.fast-csv.createReadStream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>createReadStream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createWriteStream(options) {
+    return new CsvTransformStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* `data`: Emitted with the object or `stringified` version if the `objectMode` is set to `false`.
+
+**`([options])` or `.parse(options)`**
+
+If you use `fast-csv` as a function it returns a transform stream that can be piped into.
+
+```javascript
+var stream = fs.<span class="apidocCodeKeywordSpan">createReadStream</span>("my.csv");
+
+var csvStream = csv()
+.on("data", function(data){
+     console.log(data);
+})
+.on("end", function(){
+     console.log("done");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.createWriteStream" id="apidoc.element.fast-csv.createWriteStream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>createWriteStream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createWriteStream(options) {
+    return new CsvTransformStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Formatting Functions
+
+**`createWriteStream(options)` or `.format(options)`**
+
+This is the lowest level of the write methods, it creates a stream that can be used to create a CSV of unknown size and pipe to
+an output CSV.
+
+```javascript
+var csvStream = csv.<span class="apidocCodeKeywordSpan">createWriteStream</span>({headers: true}),
+    writableStream = fs.createWriteStream("my.csv");
+
+writableStream.on("finish", function(){
+  console.log("DONE!");
+});
+
+csvStream.pipe(writableStream);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended" id="apidoc.element.fast-csv.extended">
+        function <span class="apidocSignatureSpan">fast-csv.</span>extended
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _extender(obj) {
+    var ret = obj, i, l;
+    if (!(obj instanceof Base)) {
+        var OurBase = Base;
+        for (i = 0, l = defined.length; i &lt; l; i++) {
+            var definer = defined[i];
+            if (definer[0](obj)) {
+                OurBase = OurBase.extend({instance: definer[1]});
+            }
+        }
+        ret = new OurBase(obj);
+        ret["__extender__"] = _extender;
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.format" id="apidoc.element.fast-csv.format">
+        function <span class="apidocSignatureSpan">fast-csv.</span>format
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createWriteStream(options) {
+    return new CsvTransformStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//Generated CSV
+//a,a,b,b,c,c
+//a1,a2,b1,b2,c1,c2
+```
+
+### Formatting Functions
+
+**`createWriteStream(options)` or `.<span class="apidocCodeKeywordSpan">format</span>(options)`**
+
+This is the lowest level of the write methods, it creates a stream that can be used to create a CSV of unknown size and pipe to
+an output CSV.
+
+```javascript
+var csvStream = csv.createWriteStream({headers: true}),
+writableStream = fs.createWriteStream("my.csv");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.fromPath" id="apidoc.element.fast-csv.fromPath">
+        function <span class="apidocSignatureSpan">fast-csv.</span>fromPath
+        <span class="apidocSignatureSpan">(location, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromPath(location, options) {
+    return fs.createReadStream(location).pipe(new ParserStream(options));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    })
+    .on("end", function () {
+        console.log("done");
+    });
+```
+
+
+**`.<span class="apidocCodeKeywordSpan">fromPath</span>(path[, options])`**
+
+This method parses a file from the specified path.
+
+```javascript
+var csv = require("fast-csv");
+
+csv
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.fromStream" id="apidoc.element.fast-csv.fromStream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>fromStream
+        <span class="apidocSignatureSpan">(stream, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromStream(stream, options) {
+    return stream.pipe(new ParserStream(options));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     console.log(data);
+ })
+ .on("end", function(){
+     console.log("done");
+ });
+```
+
+**`.<span class="apidocCodeKeywordSpan">fromStream</span>(stream[, options])`**
+
+This accepted a readable stream to parse data from.
+
+```javascript
+var stream = fs.createReadStream("my.csv");
+
+csv
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.fromString" id="apidoc.element.fast-csv.fromString">
+        function <span class="apidocSignatureSpan">fast-csv.</span>fromString
+        <span class="apidocSignatureSpan">(string, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromString(string, options) {
+    var rs = new stream.Readable();
+    rs.push(string);
+    rs.push(null);
+    return rs.pipe(new ParserStream(options));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     console.log(data);
+ })
+ .on("end", function(){
+     console.log("done");
+ });
+```
+
+**`.<span class="apidocCodeKeywordSpan">fromString</span>(string[, options])`**
+
+This method parses a string
+
+```javascript
+var csv = require("fast-csv");
+
+var CSV_STRING = 'a,b\n' +
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parse" id="apidoc.element.fast-csv.parse">
+        function <span class="apidocSignatureSpan">fast-csv.</span>parse
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function csv() {
+    return parser.apply(void 0, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**events**
+
+* `data`: Emitted when a record is parsed.
+* `data-invalid`: Emitted if there was invalid row encounted, **only emitted if the `validate` function is used or `strictColumnHandling
+=true`**.
+* `data`: Emitted with the object or `stringified` version if the `objectMode` is set to `false`.
+
+**`([options])` or `.<span class="apidocCodeKeywordSpan">parse</span>(options)`**
+
+If you use `fast-csv` as a function it returns a transform stream that can be piped into.
+
+```javascript
+var stream = fs.createReadStream("my.csv");
+
+var csvStream = csv()
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.write" id="apidoc.element.fast-csv.write">
+        function <span class="apidocSignatureSpan">fast-csv.</span>write
+        <span class="apidocSignatureSpan">(arr, options, ws)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function write(arr, options, ws) {
+    var csvStream = createWriteStream(options), i = -1, l = arr.length;
+    extended.asyncEach(arr, function (item, cb) {
+        csvStream.write(item, null, cb);
+    }, function (err) {
+        if (err) {
+            csvStream.emit("error", err);
+        } else {
+            csvStream.end();
+        }
+    });
+    return csvStream;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var fileStream = fs.createReadStream("my.csv"),
+    parser = fastCsv();
+
+fileStream
+    .on("readable", function () {
+        var data;
+        while ((data = fileStream.read()) !== null) {
+            parser.<span class="apidocCodeKeywordSpan">write</span>(data);
+        }
+    })
+    .on("end", function () {
+        parser.end();
+    });
+
+parser
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.writeToBuffer" id="apidoc.element.fast-csv.writeToBuffer">
+        function <span class="apidocSignatureSpan">fast-csv.</span>writeToBuffer
+        <span class="apidocSignatureSpan">(arr, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToBuffer(arr, options, cb) {
+    if (extended.isFunction(options)) {
+        cb = options;
+        options = {};
+    }
+    var ws = new stream.Writable(), buffers = [], l = 0;
+    ws._write = function (data, enc, cb) {
+        buffers.push(data);
+        l++;
+        cb();
+    };
+    ws
+        .on("error", cb)
+        .on("finish", function () {
+            cb(null, Buffer.concat(buffers));
+        });
+    write(arr, options).pipe(ws);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.writeToPath" id="apidoc.element.fast-csv.writeToPath">
+        function <span class="apidocSignatureSpan">fast-csv.</span>writeToPath
+        <span class="apidocSignatureSpan">(path, arr, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToPath(path, arr, options) {
+    var stream = fs.createWriteStream(path, {encoding: "utf8"});
+    return write(arr, options).pipe(stream);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**`writeToPath(path, arr[, options])`**
+
+Write an array of values to the specified path
+
+```javascript
+csv
+.<span class="apidocCodeKeywordSpan">writeToPath</span>("my.csv", [
+    ["a", "b"],
+    ["a1", "b1"],
+    ["a2", "b2"]
+], {headers: true})
+.on("finish", function(){
+    console.log("done!");
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.writeToStream" id="apidoc.element.fast-csv.writeToStream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>writeToStream
+        <span class="apidocSignatureSpan">(ws, arr, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToStream(ws, arr, options) {
+    return write(arr, options).pipe(ws);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**`writeToStream(stream, arr[, options])`**
+
+Write an array of values to a `WritableStream`
+
+```javascript
+csv
+   .<span class="apidocCodeKeywordSpan">writeToStream</span>(fs.createWriteStream("my.csv"), [
+       ["a", "b"],
+       ["a1", "b1"],
+       ["a2", "b2"]
+   ], {headers: true});
+```
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.writeToString" id="apidoc.element.fast-csv.writeToString">
+        function <span class="apidocSignatureSpan">fast-csv.</span>writeToString
+        <span class="apidocSignatureSpan">(arr, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToString(arr, options, cb) {
+    if (extended.isFunction(options)) {
+        cb = options;
+        options = {};
+    }
+    var ws = new stream.Writable(), written = [];
+    ws._write = function (data, enc, cb) {
+        written.push(data + "");
+        cb();
+    };
+    ws
+        .on("error", cb)
+        .on("finish", function () {
+            cb(null, written.join(""));
+        });
+    write(arr, options).pipe(ws);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  console.log("done!");
+   });
+```
+
+**`writeToString(arr[, options], cb)`**
+
+```javascript
+csv.<span class="apidocCodeKeywordSpan">writeToString</span>(
+[
+    ["a", "b"],
+    ["a1", "b1"],
+    ["a2", "b2"]
+],
+{headers: true},
+function(err, data){
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.extended" id="apidoc.module.fast-csv.extended">module fast-csv.extended</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.extended" id="apidoc.element.fast-csv.extended.extended">
+        function <span class="apidocSignatureSpan">fast-csv.</span>extended
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _extender(obj) {
+    var ret = obj, i, l;
+    if (!(obj instanceof Base)) {
+        var OurBase = Base;
+        for (i = 0, l = defined.length; i &lt; l; i++) {
+            var definer = defined[i];
+            if (definer[0](obj)) {
+                OurBase = OurBase.extend({instance: definer[1]});
+            }
+        }
+        ret = new OurBase(obj);
+        ret["__extender__"] = _extender;
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.asyncEach" id="apidoc.element.fast-csv.extended.asyncEach">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>asyncEach
+        <span class="apidocSignatureSpan">(arr, iter, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">asyncEach = function (arr, iter, cb) {
+
+
+    (function asyncIterator(i, l, rows, cb) {
+        if (++i &lt; l) {
+            iter(rows[i], function (err) {
+                if (err) {
+                    cb(err);
+                } else {
+                    if ((i % 100) === 0) {
+                        //dont overflow the stack
+                        setImmediate(function () {
+                            asyncIterator(i, l, rows, cb);
+                        });
+                    } else {
+                        asyncIterator(i, l, rows, cb);
+                    }
+                }
+            });
+        } else {
+            //get out of stack
+            cb(null, arr);
+        }
+    }(-1, arr.length, arr, cb));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.contains" id="apidoc.element.fast-csv.extended.contains">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>contains
+        <span class="apidocSignatureSpan">(arr, obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function contains(arr, obj) {
+    return isIn(obj, arr);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.containsAt" id="apidoc.element.fast-csv.extended.containsAt">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>containsAt
+        <span class="apidocSignatureSpan">(arr, obj, index)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function containsAt(arr, obj, index) {
+    if (isArray(arr) &amp;&amp; arr.length &gt; index) {
+        return isEq(arr[index], obj);
+    }
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.deepEqual" id="apidoc.element.fast-csv.extended.deepEqual">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>deepEqual
+        <span class="apidocSignatureSpan">(actual, expected)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function deepEqual(actual, expected) {
+    // 7.1. All identical values are equivalent, as determined by ===.
+    if (actual === expected) {
+        return true;
+
+    } else if (typeof Buffer !== "undefined" &amp;&amp; Buffer.isBuffer(actual) &amp;&amp; Buffer.isBuffer(expected)) {
+        if (actual.length !== expected.length) {
+            return false;
+        }
+        for (var i = 0; i &lt; actual.length; i++) {
+            if (actual[i] !== expected[i]) {
+                return false;
+            }
+        }
+        return true;
+
+        // 7.2. If the expected value is a Date object, the actual value is
+        // equivalent if it is also a Date object that refers to the same time.
+    } else if (isDate(actual) &amp;&amp; isDate(expected)) {
+        return actual.getTime() === expected.getTime();
+
+        // 7.3 If the expected value is a RegExp object, the actual value is
+        // equivalent if it is also a RegExp object with the same source and
+        // properties (`global`, `multiline`, `lastIndex`, `ignoreCase`).
+    } else if (isRegExp(actual) &amp;&amp; isRegExp(expected)) {
+        return actual.source === expected.source &amp;&amp;
+            actual.global === expected.global &amp;&amp;
+            actual.multiline === expected.multiline &amp;&amp;
+            actual.lastIndex === expected.lastIndex &amp;&amp;
+            actual.ignoreCase === expected.ignoreCase;
+
+        // 7.4. Other pairs that do not both pass typeof value == 'object',
+        // equivalence is determined by ==.
+    } else if (isString(actual) &amp;&amp; isString(expected) &amp;&amp; actual !== expected) {
+        return false;
+    } else if (typeof actual !== 'object' &amp;&amp; typeof expected !== 'object') {
+        return actual === expected;
+
+        // 7.5 For all other Object pairs, including Array objects, equivalence is
+        // determined by having the same number of owned properties (as verified
+        // with Object.prototype.hasOwnProperty.call), the same set of keys
+        // (although not necessarily the same order), equivalent values for every
+        // corresponding key, and an identical 'prototype' property. Note: this
+        // accounts for both named and indexed properties on Arrays.
+    } else {
+        return objEquiv(actual, expected);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.deepMerge" id="apidoc.element.fast-csv.extended.deepMerge">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>deepMerge
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function deepMerge(obj) {
+    if (!obj) {
+        obj = {};
+    }
+    for (var i = 1, l = arguments.length; i &lt; l; i++) {
+        _deepMerge(obj, arguments[i]);
+    }
+    return obj; // Object
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.define" id="apidoc.element.fast-csv.extended.define">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>define
+        <span class="apidocSignatureSpan">(tester, decorate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function define(tester, decorate) {
+    if (arguments.length) {
+        if (typeof tester === "object") {
+            decorate = tester;
+            tester = always;
+        }
+        decorate = decorate || {};
+        var proto = {};
+        decorateProto(proto, decorate);
+        //handle browsers like which skip over the constructor while looping
+        if (!proto.hasOwnProperty("constructor")) {
+            if (decorate.hasOwnProperty("constructor")) {
+                addMethod(proto, "constructor", decorate.constructor);
+            } else {
+                proto.constructor = function () {
+                    this._super(arguments);
+                };
+            }
+        }
+        defined.push([tester, proto]);
+    }
+    return _extender;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.escape" id="apidoc.element.fast-csv.extended.escape">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>escape
+        <span class="apidocSignatureSpan">(str, except)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function escape(str, except) {
+    return str.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, function (ch) {
+        if (except &amp;&amp; arr.indexOf(except, ch) !== -1) {
+            return ch;
+        }
+        return "\\" + ch;
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.expose" id="apidoc.element.fast-csv.extended.expose">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>expose
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function expose() {
+    var methods;
+    for (var i = 0, l = arguments.length; i &lt; l; i++) {
+        methods = arguments[i];
+        if (typeof methods === "object") {
+            merge(_extender, methods, ["define", "extend", "expose", "__defined__"]);
+        }
+    }
+    return _extender;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.extend" id="apidoc.element.fast-csv.extended.extend">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>extend
+        <span class="apidocSignatureSpan">(supr)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function extend(supr) {
+    if (supr &amp;&amp; supr.hasOwnProperty("__defined__")) {
+        _extender["__defined__"] = defined = defined.concat(supr["__defined__"]);
+    }
+    merge(_extender, supr, ["define", "extend", "expose", "__defined__"]);
+    return _extender;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.format" id="apidoc.element.fast-csv.extended.format">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>format
+        <span class="apidocSignatureSpan">(str, obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function format(str, obj) {
+    if (obj instanceof Array) {
+        var i = 0, len = obj.length;
+        //find the matches
+        return str.replace(FORMAT_REGEX, function (m, format, type) {
+            var replacer, ret;
+            if (i &lt; len) {
+                replacer = obj[i++];
+            } else {
+                //we are out of things to replace with so
+                //just return the match?
+                return m;
+            }
+            if (m === "%s" || m === "%d" || m === "%D") {
+                //fast path!
+                ret = replacer + "";
+            } else if (m === "%Z") {
+                ret = replacer.toUTCString();
+            } else if (m === "%j") {
+                try {
+                    ret = stringify(replacer);
+                } catch (e) {
+                    throw new Error("stringExtended.format : Unable to parse json from ", replacer);
+                }
+            } else {
+                format = format.replace(/^\[|\]$/g, "");
+                switch (type) {
+                case "s":
+                    ret = formatString(replacer, format);
+                    break;
+                case "d":
+                    ret = formatNumber(replacer, format);
+                    break;
+                case "j":
+                    ret = formatObject(replacer, format);
+                    break;
+                case "D":
+                    ret = date.format(replacer, format);
+                    break;
+                case "Z":
+                    ret = date.format(replacer, format, true);
+                    break;
+                }
+            }
+            return ret;
+        });
+    } else if (isHash(obj)) {
+        return str.replace(INTERP_REGEX, function (m, format, value) {
+            value = obj[value];
+            if (!is.isUndefined(value)) {
+                if (format) {
+                    if (is.isString(value)) {
+                        return formatString(value, format);
+                    } else if (is.isNumber(value)) {
+                        return formatNumber(value, format);
+                    } else if (is.isDate(value)) {
+                        return date.format(value, format);
+                    } else if (is.isObject(value)) {
+                        return formatObject(value, format);
+                    }
+                } else {
+                    return "" + value;
+                }
+            }
+            return m;
+        });
+    } else {
+        var args = aSlice.call(arguments).slice(1);
+        return format(str, args);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//Generated CSV
+//a,a,b,b,c,c
+//a1,a2,b1,b2,c1,c2
+```
+
+### Formatting Functions
+
+**`createWriteStream(options)` or `.<span class="apidocCodeKeywordSpan">format</span>(options)`**
+
+This is the lowest level of the write methods, it creates a stream that can be used to create a CSV of unknown size and pipe to
+an output CSV.
+
+```javascript
+var csvStream = csv.createWriteStream({headers: true}),
+writableStream = fs.createWriteStream("my.csv");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.has" id="apidoc.element.fast-csv.extended.has">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>has
+        <span class="apidocSignatureSpan">(obj, prop)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function has(obj, prop) {
+    return hasOwn.call(obj, prop);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.instanceOf" id="apidoc.element.fast-csv.extended.instanceOf">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>instanceOf
+        <span class="apidocSignatureSpan">(obj, clazz)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isInstanceOf(obj, clazz) {
+    if (isFunction(clazz)) {
+        return obj instanceof clazz;
+    } else {
+        return false;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isArguments" id="apidoc.element.fast-csv.extended.isArguments">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isArguments
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _isArguments(object) {
+    return toStr.call(object) === '[object Arguments]';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isArray" id="apidoc.element.fast-csv.extended.isArray">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isArray
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isArray() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isBoolean" id="apidoc.element.fast-csv.extended.isBoolean">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isBoolean
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isBoolean(obj) {
+    return obj === true || obj === false || toStr.call(obj) === "[object Boolean]";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isDate" id="apidoc.element.fast-csv.extended.isDate">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isDate
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isDate(obj) {
+    return toStr.call(obj) === '[object Date]';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isDefined" id="apidoc.element.fast-csv.extended.isDefined">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isDefined
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isDefined(obj) {
+    return !isUndefined(obj);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isEmpty" id="apidoc.element.fast-csv.extended.isEmpty">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isEmpty
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isEmpty(str) {
+    return str.length === 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isEq" id="apidoc.element.fast-csv.extended.isEq">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isEq
+        <span class="apidocSignatureSpan">(obj, obj2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isEq(obj, obj2) {
+<span class="apidocCodeCommentSpan">    /*jshint eqeqeq:false*/
+</span>    return obj == obj2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isFalse" id="apidoc.element.fast-csv.extended.isFalse">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isFalse
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFalse(obj) {
+    return obj === false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isFunction" id="apidoc.element.fast-csv.extended.isFunction">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isFunction
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isFunction = function (obj) {
+    return toStr.call(obj) === '[object Function]';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isGt" id="apidoc.element.fast-csv.extended.isGt">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isGt
+        <span class="apidocSignatureSpan">(obj, obj2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isGt(obj, obj2) {
+    return obj &gt; obj2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isGte" id="apidoc.element.fast-csv.extended.isGte">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isGte
+        <span class="apidocSignatureSpan">(obj, obj2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isGte(obj, obj2) {
+    return obj &gt;= obj2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isHash" id="apidoc.element.fast-csv.extended.isHash">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isHash
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isHash(obj) {
+    var ret = isObject(obj);
+    return ret &amp;&amp; obj.constructor === Object &amp;&amp; !obj.nodeType &amp;&amp; !obj.setInterval;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isIn" id="apidoc.element.fast-csv.extended.isIn">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isIn
+        <span class="apidocSignatureSpan">(obj, arr)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isIn(obj, arr) {
+    if ((isArray(arr) &amp;&amp; Array.prototype.indexOf) || isString(arr)) {
+        return arr.indexOf(obj) &gt; -1;
+    } else if (isArray(arr)) {
+        for (var i = 0, l = arr.length; i &lt; l; i++) {
+            if (isEq(obj, arr[i])) {
+                return true;
+            }
+        }
+    }
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isLength" id="apidoc.element.fast-csv.extended.isLength">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isLength
+        <span class="apidocSignatureSpan">(obj, l)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function length(obj, l) {
+    if (has(obj, "length")) {
+        return obj.length === l;
+    }
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isLike" id="apidoc.element.fast-csv.extended.isLike">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isLike
+        <span class="apidocSignatureSpan">(obj, reg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isLike(obj, reg) {
+    if (isString(reg)) {
+        return ("" + obj).match(reg) !== null;
+    } else if (isRegExp(reg)) {
+        return reg.test(obj);
+    }
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isLt" id="apidoc.element.fast-csv.extended.isLt">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isLt
+        <span class="apidocSignatureSpan">(obj, obj2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isLt(obj, obj2) {
+    return obj &lt; obj2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isLte" id="apidoc.element.fast-csv.extended.isLte">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isLte
+        <span class="apidocSignatureSpan">(obj, obj2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isLte(obj, obj2) {
+    return obj &lt;= obj2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isNeq" id="apidoc.element.fast-csv.extended.isNeq">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNeq
+        <span class="apidocSignatureSpan">(obj, obj2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNeq(obj, obj2) {
+<span class="apidocCodeCommentSpan">    /*jshint eqeqeq:false*/
+</span>    return obj != obj2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isNotIn" id="apidoc.element.fast-csv.extended.isNotIn">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNotIn
+        <span class="apidocSignatureSpan">(obj, arr)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNotIn(obj, arr) {
+    return !isIn(obj, arr);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isNotLength" id="apidoc.element.fast-csv.extended.isNotLength">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNotLength
+        <span class="apidocSignatureSpan">(obj, l)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function notLength(obj, l) {
+    if (has(obj, "length")) {
+        return obj.length !== l;
+    }
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isNotLike" id="apidoc.element.fast-csv.extended.isNotLike">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNotLike
+        <span class="apidocSignatureSpan">(obj, reg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNotLike(obj, reg) {
+    return !isLike(obj, reg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isNotNull" id="apidoc.element.fast-csv.extended.isNotNull">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNotNull
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNotNull(obj) {
+    return !isNull(obj);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isNull" id="apidoc.element.fast-csv.extended.isNull">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNull
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNull(obj) {
+    return obj === null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isNumber" id="apidoc.element.fast-csv.extended.isNumber">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isNumber
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNumber(obj) {
+    return toStr.call(obj) === '[object Number]';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isObject" id="apidoc.element.fast-csv.extended.isObject">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isObject
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isObject(obj) {
+    var undef;
+    return obj !== null &amp;&amp; typeof obj === "object";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isRegExp" id="apidoc.element.fast-csv.extended.isRegExp">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isRegExp
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isRegExp(obj) {
+    return toStr.call(obj) === '[object RegExp]';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isSeq" id="apidoc.element.fast-csv.extended.isSeq">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isSeq
+        <span class="apidocSignatureSpan">(obj, obj2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSeq(obj, obj2) {
+    return obj === obj2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isSneq" id="apidoc.element.fast-csv.extended.isSneq">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isSneq
+        <span class="apidocSignatureSpan">(obj, obj2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSneq(obj, obj2) {
+    return obj !== obj2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isString" id="apidoc.element.fast-csv.extended.isString">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isString
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isString(obj) {
+    return toStr.call(obj) === '[object String]';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isTrue" id="apidoc.element.fast-csv.extended.isTrue">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isTrue
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isTrue(obj) {
+    return obj === true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isUndefined" id="apidoc.element.fast-csv.extended.isUndefined">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isUndefined
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isUndefined(obj) {
+    return typeof obj === 'undefined';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.isUndefinedOrNull" id="apidoc.element.fast-csv.extended.isUndefinedOrNull">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>isUndefinedOrNull
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isUndefinedOrNull(obj) {
+    return isUndefined(obj) || isNull(obj);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.keys" id="apidoc.element.fast-csv.extended.keys">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>keys
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keys = function (obj) {
+    var ret = [];
+    for (var i in obj) {
+        if (hasOwn.call(obj, i)) {
+            ret.push(i);
+        }
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.merge" id="apidoc.element.fast-csv.extended.merge">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>merge
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function merge(obj) {
+    if (!obj) {
+        obj = {};
+    }
+    for (var i = 1, l = arguments.length; i &lt; l; i++) {
+        _merge(obj, arguments[i]);
+    }
+    return obj; // Object
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.multiply" id="apidoc.element.fast-csv.extended.multiply">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>multiply
+        <span class="apidocSignatureSpan">(str, times)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function multiply(str, times) {
+    var ret = [];
+    if (times) {
+        for (var i = 0; i &lt; times; i++) {
+            ret.push(str);
+        }
+    }
+    return ret.join("");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.notContains" id="apidoc.element.fast-csv.extended.notContains">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>notContains
+        <span class="apidocSignatureSpan">(arr, obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function notContains(arr, obj) {
+    return !isIn(obj, arr);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.notContainsAt" id="apidoc.element.fast-csv.extended.notContainsAt">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>notContainsAt
+        <span class="apidocSignatureSpan">(arr, obj, index)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function notContainsAt(arr, obj, index) {
+    if (isArray(arr)) {
+        return !isEq(arr[index], obj);
+    }
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.notHas" id="apidoc.element.fast-csv.extended.notHas">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>notHas
+        <span class="apidocSignatureSpan">(obj, prop)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function notHas(obj, prop) {
+    return !has(obj, prop);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.omit" id="apidoc.element.fast-csv.extended.omit">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>omit
+        <span class="apidocSignatureSpan">(hash, omitted)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function omit(hash, omitted) {
+    if (!isHash(hash)) {
+        throw new TypeError();
+    }
+    if (isString(omitted)) {
+        omitted = [omitted];
+    }
+    var objKeys = difference(keys(hash), omitted), key, ret = {};
+    for (var i = 0, len = objKeys.length; i &lt; len; ++i) {
+        key = objKeys[i];
+        ret[key] = hash[key];
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.pad" id="apidoc.element.fast-csv.extended.pad">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>pad
+        <span class="apidocSignatureSpan">(string, length, ch, end)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pad(string, length, ch, end) {
+    string = "" + string; //check for numbers
+    ch = ch || " ";
+    var strLen = string.length;
+    while (strLen &lt; length) {
+        if (end) {
+            string += ch;
+        } else {
+            string = ch + string;
+        }
+        strLen++;
+    }
+    return string;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.register" id="apidoc.element.fast-csv.extended.register">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>register
+        <span class="apidocSignatureSpan">(alias, extendWith)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function register(alias, extendWith) {
+    if (!extendWith) {
+        extendWith = alias;
+        alias = null;
+    }
+    var type = typeof extendWith;
+    if (alias) {
+        extended[alias] = extendWith;
+    } else if (extendWith &amp;&amp; type === "function") {
+        extended.extend(extendWith);
+    } else if (type === "object") {
+        extended.expose(extendWith);
+    } else {
+        throw new TypeError("extended.register must be called with an extender function");
+    }
+    return extended;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+var is = require("is-extended"),
+    hasOwn = Object.prototype.hasOwnProperty;
+module.exports = require("extended")()
+    .<span class="apidocCodeKeywordSpan">register</span>(is)
+    .register(require("object-extended"))
+    .register(require("string-extended"))
+    .register("LINE_BREAK", require("os").EOL)
+    .register("asyncEach", function (arr, iter, cb) {
+
+
+(function asyncIterator(i, l, rows, cb) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.spreadArgs" id="apidoc.element.fast-csv.extended.spreadArgs">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>spreadArgs
+        <span class="apidocSignatureSpan">(f, args, scope)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function spreadArgs(f, args, scope) {
+    var ret;
+    switch ((args || []).length) {
+        case 0:
+            ret = f.call(scope);
+            break;
+        case 1:
+            ret = f.call(scope, args[0]);
+            break;
+        case 2:
+            ret = f.call(scope, args[0], args[1]);
+            break;
+        case 3:
+            ret = f.call(scope, args[0], args[1], args[2]);
+            break;
+        default:
+            ret = f.apply(scope, args);
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.style" id="apidoc.element.fast-csv.extended.style">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>style
+        <span class="apidocSignatureSpan">(str, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function style(str, options) {
+    var ret, i, l;
+    if (options) {
+        if (is.isArray(str)) {
+            ret = [];
+            for (i = 0, l = str.length; i &lt; l; i++) {
+                ret.push(style(str[i], options));
+            }
+        } else if (options instanceof Array) {
+            ret = str;
+            for (i = 0, l = options.length; i &lt; l; i++) {
+                ret = style(ret, options[i]);
+            }
+        } else if (options in styles) {
+            ret = '\x1B[' + styles[options] + 'm' + str + '\x1B[0m';
+        }
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.switcher" id="apidoc.element.fast-csv.extended.switcher">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>switcher
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _extender(obj) {
+    var ret = obj, i, l;
+    if (!(obj instanceof Base)) {
+        var OurBase = Base;
+        for (i = 0, l = defined.length; i &lt; l; i++) {
+            var definer = defined[i];
+            if (definer[0](obj)) {
+                OurBase = OurBase.extend({instance: definer[1]});
+            }
+        }
+        ret = new OurBase(obj);
+        ret["__extender__"] = _extender;
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.tester" id="apidoc.element.fast-csv.extended.tester">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>tester
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _extender(obj) {
+    var ret = obj, i, l;
+    if (!(obj instanceof Base)) {
+        var OurBase = Base;
+        for (i = 0, l = defined.length; i &lt; l; i++) {
+            var definer = defined[i];
+            if (definer[0](obj)) {
+                OurBase = OurBase.extend({instance: definer[1]});
+            }
+        }
+        ret = new OurBase(obj);
+        ret["__extender__"] = _extender;
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.toArray" id="apidoc.element.fast-csv.extended.toArray">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>toArray
+        <span class="apidocSignatureSpan">(testStr, delim)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toArray(testStr, delim) {
+    var ret = [];
+    if (testStr) {
+        if (testStr.indexOf(delim) &gt; 0) {
+            ret = testStr.replace(/\s+/g, "").split(delim);
+        }
+        else {
+            ret.push(testStr);
+        }
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.trim" id="apidoc.element.fast-csv.extended.trim">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>trim
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function trim(str) {
+    return str.replace(/^\s*|\s*$/g, "");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.trimLeft" id="apidoc.element.fast-csv.extended.trimLeft">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>trimLeft
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function trimLeft(str) {
+    return str.replace(/^\s*/, "");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.trimRight" id="apidoc.element.fast-csv.extended.trimRight">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>trimRight
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function trimRight(str) {
+    return str.replace(/\s*$/, "");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.extended.truncate" id="apidoc.element.fast-csv.extended.truncate">
+        function <span class="apidocSignatureSpan">fast-csv.extended.</span>truncate
+        <span class="apidocSignatureSpan">(string, length, end)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function truncate(string, length, end) {
+    var ret = string;
+    if (is.isString(ret)) {
+        if (string.length &gt; length) {
+            if (end) {
+                var l = string.length;
+                ret = string.substring(l - length, l);
+            } else {
+                ret = string.substring(0, length);
+            }
+        }
+    } else {
+        ret = truncate("" + ret, length);
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.format" id="apidoc.module.fast-csv.format">module fast-csv.format</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.format.format" id="apidoc.element.fast-csv.format.format">
+        function <span class="apidocSignatureSpan">fast-csv.</span>format
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createWriteStream(options) {
+    return new CsvTransformStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//Generated CSV
+//a,a,b,b,c,c
+//a1,a2,b1,b2,c1,c2
+```
+
+### Formatting Functions
+
+**`createWriteStream(options)` or `.<span class="apidocCodeKeywordSpan">format</span>(options)`**
+
+This is the lowest level of the write methods, it creates a stream that can be used to create a CSV of unknown size and pipe to
+an output CSV.
+
+```javascript
+var csvStream = csv.createWriteStream({headers: true}),
+writableStream = fs.createWriteStream("my.csv");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.format.createWriteStream" id="apidoc.element.fast-csv.format.createWriteStream">
+        function <span class="apidocSignatureSpan">fast-csv.format.</span>createWriteStream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createWriteStream(options) {
+    return new CsvTransformStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Formatting Functions
+
+**`createWriteStream(options)` or `.format(options)`**
+
+This is the lowest level of the write methods, it creates a stream that can be used to create a CSV of unknown size and pipe to
+an output CSV.
+
+```javascript
+var csvStream = csv.<span class="apidocCodeKeywordSpan">createWriteStream</span>({headers: true}),
+    writableStream = fs.createWriteStream("my.csv");
+
+writableStream.on("finish", function(){
+  console.log("DONE!");
+});
+
+csvStream.pipe(writableStream);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.format.write" id="apidoc.element.fast-csv.format.write">
+        function <span class="apidocSignatureSpan">fast-csv.format.</span>write
+        <span class="apidocSignatureSpan">(arr, options, ws)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function write(arr, options, ws) {
+    var csvStream = createWriteStream(options), i = -1, l = arr.length;
+    extended.asyncEach(arr, function (item, cb) {
+        csvStream.write(item, null, cb);
+    }, function (err) {
+        if (err) {
+            csvStream.emit("error", err);
+        } else {
+            csvStream.end();
+        }
+    });
+    return csvStream;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var fileStream = fs.createReadStream("my.csv"),
+    parser = fastCsv();
+
+fileStream
+    .on("readable", function () {
+        var data;
+        while ((data = fileStream.read()) !== null) {
+            parser.<span class="apidocCodeKeywordSpan">write</span>(data);
+        }
+    })
+    .on("end", function () {
+        parser.end();
+    });
+
+parser
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.format.writeToBuffer" id="apidoc.element.fast-csv.format.writeToBuffer">
+        function <span class="apidocSignatureSpan">fast-csv.format.</span>writeToBuffer
+        <span class="apidocSignatureSpan">(arr, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToBuffer(arr, options, cb) {
+    if (extended.isFunction(options)) {
+        cb = options;
+        options = {};
+    }
+    var ws = new stream.Writable(), buffers = [], l = 0;
+    ws._write = function (data, enc, cb) {
+        buffers.push(data);
+        l++;
+        cb();
+    };
+    ws
+        .on("error", cb)
+        .on("finish", function () {
+            cb(null, Buffer.concat(buffers));
+        });
+    write(arr, options).pipe(ws);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.format.writeToPath" id="apidoc.element.fast-csv.format.writeToPath">
+        function <span class="apidocSignatureSpan">fast-csv.format.</span>writeToPath
+        <span class="apidocSignatureSpan">(path, arr, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToPath(path, arr, options) {
+    var stream = fs.createWriteStream(path, {encoding: "utf8"});
+    return write(arr, options).pipe(stream);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**`writeToPath(path, arr[, options])`**
+
+Write an array of values to the specified path
+
+```javascript
+csv
+.<span class="apidocCodeKeywordSpan">writeToPath</span>("my.csv", [
+    ["a", "b"],
+    ["a1", "b1"],
+    ["a2", "b2"]
+], {headers: true})
+.on("finish", function(){
+    console.log("done!");
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.format.writeToStream" id="apidoc.element.fast-csv.format.writeToStream">
+        function <span class="apidocSignatureSpan">fast-csv.format.</span>writeToStream
+        <span class="apidocSignatureSpan">(ws, arr, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToStream(ws, arr, options) {
+    return write(arr, options).pipe(ws);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**`writeToStream(stream, arr[, options])`**
+
+Write an array of values to a `WritableStream`
+
+```javascript
+csv
+   .<span class="apidocCodeKeywordSpan">writeToStream</span>(fs.createWriteStream("my.csv"), [
+       ["a", "b"],
+       ["a1", "b1"],
+       ["a2", "b2"]
+   ], {headers: true});
+```
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.format.writeToString" id="apidoc.element.fast-csv.format.writeToString">
+        function <span class="apidocSignatureSpan">fast-csv.format.</span>writeToString
+        <span class="apidocSignatureSpan">(arr, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToString(arr, options, cb) {
+    if (extended.isFunction(options)) {
+        cb = options;
+        options = {};
+    }
+    var ws = new stream.Writable(), written = [];
+    ws._write = function (data, enc, cb) {
+        written.push(data + "");
+        cb();
+    };
+    ws
+        .on("error", cb)
+        .on("finish", function () {
+            cb(null, written.join(""));
+        });
+    write(arr, options).pipe(ws);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  console.log("done!");
+   });
+```
+
+**`writeToString(arr[, options], cb)`**
+
+```javascript
+csv.<span class="apidocCodeKeywordSpan">writeToString</span>(
+[
+    ["a", "b"],
+    ["a1", "b1"],
+    ["a2", "b2"]
+],
+{headers: true},
+function(err, data){
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
