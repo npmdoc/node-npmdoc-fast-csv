@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fast-csv">
+            function <span class="apidocSignatureSpan"></span>fast-csv
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.fast-csv.createReadStream">
             function <span class="apidocSignatureSpan">fast-csv.</span>createReadStream
             <span class="apidocSignatureSpan">(options)</span>
@@ -128,6 +137,15 @@
 
             <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse">
             function <span class="apidocSignatureSpan">fast-csv.</span>parse
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.toString">
+            function <span class="apidocSignatureSpan">fast-csv.</span>toString
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -842,10 +860,142 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.fromPath">module fast-csv.fromPath</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromPath.fromPath">
+            function <span class="apidocSignatureSpan">fast-csv.</span>fromPath
+            <span class="apidocSignatureSpan">(location, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.fromStream">module fast-csv.fromStream</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromStream.fromStream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>fromStream
+            <span class="apidocSignatureSpan">(stream, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.fromString">module fast-csv.fromString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromString.fromString">
+            function <span class="apidocSignatureSpan">fast-csv.</span>fromString
+            <span class="apidocSignatureSpan">(string, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.toString">module fast-csv.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.toString.toString">
+            function <span class="apidocSignatureSpan">fast-csv.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.write">module fast-csv.write</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.write.write">
+            function <span class="apidocSignatureSpan">fast-csv.</span>write
+            <span class="apidocSignatureSpan">(arr, options, ws)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.writeToBuffer">module fast-csv.writeToBuffer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToBuffer.writeToBuffer">
+            function <span class="apidocSignatureSpan">fast-csv.</span>writeToBuffer
+            <span class="apidocSignatureSpan">(arr, options, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.writeToPath">module fast-csv.writeToPath</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToPath.writeToPath">
+            function <span class="apidocSignatureSpan">fast-csv.</span>writeToPath
+            <span class="apidocSignatureSpan">(path, arr, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.writeToStream">module fast-csv.writeToStream</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToStream.writeToStream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>writeToStream
+            <span class="apidocSignatureSpan">(ws, arr, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.writeToString">module fast-csv.writeToString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToString.writeToString">
+            function <span class="apidocSignatureSpan">fast-csv.</span>writeToString
+            <span class="apidocSignatureSpan">(arr, options, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.fast-csv" id="apidoc.module.fast-csv">module fast-csv</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.fast-csv" id="apidoc.element.fast-csv.fast-csv">
+        function <span class="apidocSignatureSpan"></span>fast-csv
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function csv() {
+    return parser.apply(void 0, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
@@ -1093,6 +1243,21 @@ var stream = fs.createReadStream(&#x22;my.csv&#x22;);
 
 var csvStream = csv()
 ...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.toString" id="apidoc.element.fast-csv.toString">
+        function <span class="apidocSignatureSpan">fast-csv.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -2825,6 +2990,339 @@ csv
     <h2>
         <a href="#apidoc.element.fast-csv.format.writeToString" id="apidoc.element.fast-csv.format.writeToString">
         function <span class="apidocSignatureSpan">fast-csv.format.</span>writeToString
+        <span class="apidocSignatureSpan">(arr, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToString(arr, options, cb) {
+    if (extended.isFunction(options)) {
+        cb = options;
+        options = {};
+    }
+    var ws = new stream.Writable(), written = [];
+    ws._write = function (data, enc, cb) {
+        written.push(data + &#x22;&#x22;);
+        cb();
+    };
+    ws
+        .on(&#x22;error&#x22;, cb)
+        .on(&#x22;finish&#x22;, function () {
+            cb(null, written.join(&#x22;&#x22;));
+        });
+    write(arr, options).pipe(ws);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  console.log(&#x22;done!&#x22;);
+   });
+```
+
+**`writeToString(arr[, options], cb)`**
+
+```javascript
+csv.<span class="apidocCodeKeywordSpan">writeToString</span>(
+[
+    [&#x22;a&#x22;, &#x22;b&#x22;],
+    [&#x22;a1&#x22;, &#x22;b1&#x22;],
+    [&#x22;a2&#x22;, &#x22;b2&#x22;]
+],
+{headers: true},
+function(err, data){
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.fromPath" id="apidoc.module.fast-csv.fromPath">module fast-csv.fromPath</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.fromPath.fromPath" id="apidoc.element.fast-csv.fromPath.fromPath">
+        function <span class="apidocSignatureSpan">fast-csv.</span>fromPath
+        <span class="apidocSignatureSpan">(location, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromPath(location, options) {
+    return fs.createReadStream(location).pipe(new ParserStream(options));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    })
+    .on(&#x22;end&#x22;, function () {
+        console.log(&#x22;done&#x22;);
+    });
+```
+
+
+**`.<span class="apidocCodeKeywordSpan">fromPath</span>(path[, options])`**
+
+This method parses a file from the specified path.
+
+```javascript
+var csv = require(&#x22;fast-csv&#x22;);
+
+csv
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.fromStream" id="apidoc.module.fast-csv.fromStream">module fast-csv.fromStream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.fromStream.fromStream" id="apidoc.element.fast-csv.fromStream.fromStream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>fromStream
+        <span class="apidocSignatureSpan">(stream, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromStream(stream, options) {
+    return stream.pipe(new ParserStream(options));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     console.log(data);
+ })
+ .on(&#x22;end&#x22;, function(){
+     console.log(&#x22;done&#x22;);
+ });
+```
+
+**`.<span class="apidocCodeKeywordSpan">fromStream</span>(stream[, options])`**
+
+This accepted a readable stream to parse data from.
+
+```javascript
+var stream = fs.createReadStream(&#x22;my.csv&#x22;);
+
+csv
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.fromString" id="apidoc.module.fast-csv.fromString">module fast-csv.fromString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.fromString.fromString" id="apidoc.element.fast-csv.fromString.fromString">
+        function <span class="apidocSignatureSpan">fast-csv.</span>fromString
+        <span class="apidocSignatureSpan">(string, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromString(string, options) {
+    var rs = new stream.Readable();
+    rs.push(string);
+    rs.push(null);
+    return rs.pipe(new ParserStream(options));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     console.log(data);
+ })
+ .on(&#x22;end&#x22;, function(){
+     console.log(&#x22;done&#x22;);
+ });
+```
+
+**`.<span class="apidocCodeKeywordSpan">fromString</span>(string[, options])`**
+
+This method parses a string
+
+```javascript
+var csv = require(&#x22;fast-csv&#x22;);
+
+var CSV_STRING = &#x27;a,b\n&#x27; +
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.toString" id="apidoc.module.fast-csv.toString">module fast-csv.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.toString.toString" id="apidoc.element.fast-csv.toString.toString">
+        function <span class="apidocSignatureSpan">fast-csv.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.write" id="apidoc.module.fast-csv.write">module fast-csv.write</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.write.write" id="apidoc.element.fast-csv.write.write">
+        function <span class="apidocSignatureSpan">fast-csv.</span>write
+        <span class="apidocSignatureSpan">(arr, options, ws)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function write(arr, options, ws) {
+    var csvStream = createWriteStream(options), i = -1, l = arr.length;
+    extended.asyncEach(arr, function (item, cb) {
+        csvStream.write(item, null, cb);
+    }, function (err) {
+        if (err) {
+            csvStream.emit(&#x22;error&#x22;, err);
+        } else {
+            csvStream.end();
+        }
+    });
+    return csvStream;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var fileStream = fs.createReadStream(&#x22;my.csv&#x22;),
+    parser = fastCsv();
+
+fileStream
+    .on(&#x22;readable&#x22;, function () {
+        var data;
+        while ((data = fileStream.read()) !== null) {
+            parser.<span class="apidocCodeKeywordSpan">write</span>(data);
+        }
+    })
+    .on(&#x22;end&#x22;, function () {
+        parser.end();
+    });
+
+parser
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.writeToBuffer" id="apidoc.module.fast-csv.writeToBuffer">module fast-csv.writeToBuffer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.writeToBuffer.writeToBuffer" id="apidoc.element.fast-csv.writeToBuffer.writeToBuffer">
+        function <span class="apidocSignatureSpan">fast-csv.</span>writeToBuffer
+        <span class="apidocSignatureSpan">(arr, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToBuffer(arr, options, cb) {
+    if (extended.isFunction(options)) {
+        cb = options;
+        options = {};
+    }
+    var ws = new stream.Writable(), buffers = [], l = 0;
+    ws._write = function (data, enc, cb) {
+        buffers.push(data);
+        l++;
+        cb();
+    };
+    ws
+        .on(&#x22;error&#x22;, cb)
+        .on(&#x22;finish&#x22;, function () {
+            cb(null, Buffer.concat(buffers));
+        });
+    write(arr, options).pipe(ws);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.writeToPath" id="apidoc.module.fast-csv.writeToPath">module fast-csv.writeToPath</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.writeToPath.writeToPath" id="apidoc.element.fast-csv.writeToPath.writeToPath">
+        function <span class="apidocSignatureSpan">fast-csv.</span>writeToPath
+        <span class="apidocSignatureSpan">(path, arr, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToPath(path, arr, options) {
+    var stream = fs.createWriteStream(path, {encoding: &#x22;utf8&#x22;});
+    return write(arr, options).pipe(stream);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**`writeToPath(path, arr[, options])`**
+
+Write an array of values to the specified path
+
+```javascript
+csv
+.<span class="apidocCodeKeywordSpan">writeToPath</span>(&#x22;my.csv&#x22;, [
+    [&#x22;a&#x22;, &#x22;b&#x22;],
+    [&#x22;a1&#x22;, &#x22;b1&#x22;],
+    [&#x22;a2&#x22;, &#x22;b2&#x22;]
+], {headers: true})
+.on(&#x22;finish&#x22;, function(){
+    console.log(&#x22;done!&#x22;);
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.writeToStream" id="apidoc.module.fast-csv.writeToStream">module fast-csv.writeToStream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.writeToStream.writeToStream" id="apidoc.element.fast-csv.writeToStream.writeToStream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>writeToStream
+        <span class="apidocSignatureSpan">(ws, arr, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeToStream(ws, arr, options) {
+    return write(arr, options).pipe(ws);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**`writeToStream(stream, arr[, options])`**
+
+Write an array of values to a `WritableStream`
+
+```javascript
+csv
+   .<span class="apidocCodeKeywordSpan">writeToStream</span>(fs.createWriteStream(&#x22;my.csv&#x22;), [
+       [&#x22;a&#x22;, &#x22;b&#x22;],
+       [&#x22;a1&#x22;, &#x22;b1&#x22;],
+       [&#x22;a2&#x22;, &#x22;b2&#x22;]
+   ], {headers: true});
+```
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.writeToString" id="apidoc.module.fast-csv.writeToString">module fast-csv.writeToString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.writeToString.writeToString" id="apidoc.element.fast-csv.writeToString.writeToString">
+        function <span class="apidocSignatureSpan">fast-csv.</span>writeToString
         <span class="apidocSignatureSpan">(arr, options, cb)</span>
         </a>
     </h2>
