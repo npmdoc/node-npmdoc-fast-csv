@@ -101,6 +101,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter_stream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>formatter_stream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromPath">
             function <span class="apidocSignatureSpan">fast-csv.</span>fromPath
             <span class="apidocSignatureSpan">(location, options)</span>
@@ -137,9 +146,9 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.toString">
-            function <span class="apidocSignatureSpan">fast-csv.</span>toString
-            <span class="apidocSignatureSpan">()</span>
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>parser_stream
+            <span class="apidocSignatureSpan">(options)</span>
             </a>
 
         </li>
@@ -186,6 +195,24 @@
             function <span class="apidocSignatureSpan">fast-csv.</span>writeToString
             <span class="apidocSignatureSpan">(arr, options, cb)</span>
             </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">fast-csv.</span>formatter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">fast-csv.</span>formatter_stream.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">fast-csv.</span>parser_stream.prototype</span>
 
         </li>
 
@@ -853,118 +880,430 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.fromPath">module fast-csv.fromPath</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.formatter">module fast-csv.formatter</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromPath.fromPath">
-            function <span class="apidocSignatureSpan">fast-csv.</span>fromPath
-            <span class="apidocSignatureSpan">(location, options)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter.checkHeaders">
+            function <span class="apidocSignatureSpan">fast-csv.formatter.</span>checkHeaders
+            <span class="apidocSignatureSpan">(stream, item)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter.createFormatter">
+            function <span class="apidocSignatureSpan">fast-csv.formatter.</span>createFormatter
+            <span class="apidocSignatureSpan">(options, stream)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter.defaultTransform">
+            function <span class="apidocSignatureSpan">fast-csv.formatter.</span>defaultTransform
+            <span class="apidocSignatureSpan">(row, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter.transformItem">
+            function <span class="apidocSignatureSpan">fast-csv.formatter.</span>transformItem
+            <span class="apidocSignatureSpan">(stream, item)</span>
             </a>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.fromStream">module fast-csv.fromStream</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.formatter_stream">module fast-csv.formatter_stream</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromStream.fromStream">
-            function <span class="apidocSignatureSpan">fast-csv.</span>fromStream
-            <span class="apidocSignatureSpan">(stream, options)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter_stream.formatter_stream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>formatter_stream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter_stream.super_">
+            function <span class="apidocSignatureSpan">fast-csv.formatter_stream.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
             </a>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.fromString">module fast-csv.fromString</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.formatter_stream.prototype">module fast-csv.formatter_stream.prototype</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.fromString.fromString">
-            function <span class="apidocSignatureSpan">fast-csv.</span>fromString
-            <span class="apidocSignatureSpan">(string, options)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter_stream.prototype.__transform">
+            function <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>__transform
+            <span class="apidocSignatureSpan">(row, cb)</span>
             </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter_stream.prototype._flush">
+            function <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>_flush
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter_stream.prototype._transform">
+            function <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>_transform
+            <span class="apidocSignatureSpan">(item, encoding, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.formatter_stream.prototype.transform">
+            function <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>transform
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>headersLength</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>totalCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>headers</span>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.toString">module fast-csv.toString</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.parse">module fast-csv.parse</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.toString.toString">
-            function <span class="apidocSignatureSpan">fast-csv.</span>toString
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.parse">
+            function <span class="apidocSignatureSpan">fast-csv.</span>parse
             <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
 
-    </ol></li>
+        <li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.write">module fast-csv.write</a><ol>
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.createReadStream">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>createReadStream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.write.write">
-            function <span class="apidocSignatureSpan">fast-csv.</span>write
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.createWriteStream">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>createWriteStream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.format">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>format
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.fromPath">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>fromPath
+            <span class="apidocSignatureSpan">(location, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.fromStream">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>fromStream
+            <span class="apidocSignatureSpan">(stream, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.fromString">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>fromString
+            <span class="apidocSignatureSpan">(string, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.write">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>write
             <span class="apidocSignatureSpan">(arr, options, ws)</span>
             </a>
 
         </li>
 
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.writeToBuffer">module fast-csv.writeToBuffer</a><ol>
-
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToBuffer.writeToBuffer">
-            function <span class="apidocSignatureSpan">fast-csv.</span>writeToBuffer
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.writeToBuffer">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>writeToBuffer
             <span class="apidocSignatureSpan">(arr, options, cb)</span>
             </a>
 
         </li>
 
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.writeToPath">module fast-csv.writeToPath</a><ol>
-
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToPath.writeToPath">
-            function <span class="apidocSignatureSpan">fast-csv.</span>writeToPath
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.writeToPath">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>writeToPath
             <span class="apidocSignatureSpan">(path, arr, options)</span>
             </a>
 
         </li>
 
-    </ol></li>
+        <li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.writeToStream">module fast-csv.writeToStream</a><ol>
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.writeToStream">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>writeToStream
+            <span class="apidocSignatureSpan">(ws, arr, options)</span>
+            </a>
+
+        </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToStream.writeToStream">
-            function <span class="apidocSignatureSpan">fast-csv.</span>writeToStream
-            <span class="apidocSignatureSpan">(ws, arr, options)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parse.writeToString">
+            function <span class="apidocSignatureSpan">fast-csv.parse.</span>writeToString
+            <span class="apidocSignatureSpan">(arr, options, cb)</span>
             </a>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.writeToString">module fast-csv.writeToString</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.parser_stream">module fast-csv.parser_stream</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.writeToString.writeToString">
-            function <span class="apidocSignatureSpan">fast-csv.</span>writeToString
-            <span class="apidocSignatureSpan">(arr, options, cb)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.parser_stream">
+            function <span class="apidocSignatureSpan">fast-csv.</span>parser_stream
+            <span class="apidocSignatureSpan">(options)</span>
             </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.super_">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.fast-csv.parser_stream.prototype">module fast-csv.parser_stream.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__emittedData</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__endEmitted</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.__doFlush">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__doFlush
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.__emitRecord">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__emitRecord
+            <span class="apidocSignatureSpan">(dataRow, count)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.__flushPausedBuffer">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__flushPausedBuffer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.__handleLine">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__handleLine
+            <span class="apidocSignatureSpan">(line, index, ignore, next)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.__processHeaders">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__processHeaders
+            <span class="apidocSignatureSpan">(rows, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.__processRows">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__processRows
+            <span class="apidocSignatureSpan">(rows, data, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.__removeBOM">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__removeBOM
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.__transform">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__transform
+            <span class="apidocSignatureSpan">(data, next)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.__validate">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__validate
+            <span class="apidocSignatureSpan">(data, next)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype._flush">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>_flush
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype._parse">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>_parse
+            <span class="apidocSignatureSpan">(data, hasMoreData, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype._transform">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>_transform
+            <span class="apidocSignatureSpan">(data, encoding, done)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.emit">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>emit
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.isStreamPaused">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>isStreamPaused
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.on">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>on
+            <span class="apidocSignatureSpan">(evt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.transform">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>transform
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.fast-csv.parser_stream.prototype.validate">
+            function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>validate
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__pausedDone</span>
 
         </li>
 
@@ -1113,6 +1452,47 @@ writableStream = fs.createWriteStream("my.csv");
 
 
     <h2>
+        <a href="#apidoc.element.fast-csv.formatter_stream" id="apidoc.element.fast-csv.formatter_stream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>formatter_stream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CsvTransformStream(options) {
+    options = options || {};
+    options.objectMode = true;
+
+    if (has(options, "transform")) {
+        // remove so its not set to _transform in Transform constructor
+        options.consumerTransform = options.transform;
+        delete options.transform;
+    }
+
+    Transform.call(this, options);
+    this.formatter = createFormatter(options, this);
+    this.rowDelimiter = options.rowDelimiter || "\n";
+    var hasHeaders = has(options, "headers") ? !!options.headers : null,
+        headers = (hasHeaders &amp;&amp; isArray(options.headers)) ? options.headers : null;
+    this.hasHeaders = hasHeaders;
+    this.headers = headers;
+    if (hasHeaders) {
+        if (headers) {
+            this.parsedHeaders = true;
+            this.headersLength = headers.length;
+        } else {
+            this.parsedHeaders = false;
+        }
+    }
+    this.hasWrittenHeaders = hasHeaders ? false : true;
+    this.includeEndRowDelimiter = !!options.includeEndRowDelimiter,
+    has(options, "consumerTransform") &amp;&amp; this.transform(options.consumerTransform);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.fast-csv.fromPath" id="apidoc.element.fast-csv.fromPath">
         function <span class="apidocSignatureSpan">fast-csv.</span>fromPath
         <span class="apidocSignatureSpan">(location, options)</span>
@@ -1241,14 +1621,41 @@ var csvStream = csv()
 
 
     <h2>
-        <a href="#apidoc.element.fast-csv.toString" id="apidoc.element.fast-csv.toString">
-        function <span class="apidocSignatureSpan">fast-csv.</span>toString
-        <span class="apidocSignatureSpan">()</span>
+        <a href="#apidoc.element.fast-csv.parser_stream" id="apidoc.element.fast-csv.parser_stream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>parser_stream
+        <span class="apidocSignatureSpan">(options)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
+    <li>description and source-code<pre class="apidocCodePre">function ParserStream(options) {
+    options = options || {};
+    options.objectMode = extended.has(options, "objectMode") ? options.objectMode : true;
+    stream.Transform.call(this, options);
+    this.lines = "";
+    this.decoder = new StringDecoder();
+    this._parsedHeaders = false;
+    this._rowCount = -1;
+    this._emitData = false;
+    var delimiter;
+    if (extended.has(options, "delimiter")) {
+        delimiter = options.delimiter;
+        if (delimiter.length &gt; 1) {
+            throw new Error("delimiter option must be one character long");
+        }
+        delimiter = extended.escape(delimiter);
+    } else {
+        delimiter = DEFAULT_DELIMITER;
+    }
+    options.delimiter = delimiter;
+    this.parser = createParser(options);
+    this._headers = options.headers;
+    this._renameHeaders = options.renameHeaders;
+    this._ignoreEmpty = options.ignoreEmpty;
+    this._discardUnmappedColumns = options.discardUnmappedColumns;
+    this._strictColumnHandling = options.strictColumnHandling;
+    this.__objectMode = options.objectMode;
+    this.__buffered = [];
+    return this;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1433,6 +1840,12 @@ function(err, data){
     </ul>
 
 
+
+
+
+
+
+
 </div>
 
 <div class="apidocSectionDiv">
@@ -1498,7 +1911,23 @@ function(err, data){
         }
     }(-1, arr.length, arr, cb));
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function createWriteStream(options) {
+return new CsvTransformStream(options);
+}
+
+function write(arr, options, ws) {
+var csvStream = createWriteStream(options), i = -1, l = arr.length;
+extended.<span class="apidocCodeKeywordSpan">asyncEach</span>(arr, function (item, cb) {
+    csvStream.write(item, null, cb);
+}, function (err) {
+    if (err) {
+        csvStream.emit("error", err);
+    } else {
+        csvStream.end();
+    }
+...</pre></li>
     </ul>
 
 
@@ -1667,7 +2096,23 @@ function(err, data){
         return "\\" + ch;
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this._emitData = false;
+var delimiter;
+if (extended.has(options, "delimiter")) {
+    delimiter = options.delimiter;
+    if (delimiter.length &gt; 1) {
+        throw new Error("delimiter option must be one character long");
+    }
+    delimiter = extended.<span class="apidocCodeKeywordSpan">escape</span>(delimiter);
+} else {
+    delimiter = DEFAULT_DELIMITER;
+}
+options.delimiter = delimiter;
+this.parser = createParser(options);
+this._headers = options.headers;
+this._renameHeaders = options.renameHeaders;
+...</pre></li>
     </ul>
 
 
@@ -1708,7 +2153,22 @@ function(err, data){
     merge(_extender, supr, ["define", "extend", "expose", "__defined__"]);
     return _extender;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+this.hasWrittenHeaders = hasHeaders ? false : true;
+this.includeEndRowDelimiter = !!options.includeEndRowDelimiter,
+has(options, "consumerTransform") &amp;&amp; this.transform(options.consumerTransform);
+}
+util.inherits(CsvTransformStream, Transform);
+
+extended(CsvTransformStream).<span class="apidocCodeKeywordSpan">extend</span>({
+
+headers: null,
+
+headersLength: 0,
+
+totalCount: 0,
+...</pre></li>
     </ul>
 
 
@@ -1822,7 +2282,24 @@ writableStream = fs.createWriteStream("my.csv");
     <li>description and source-code<pre class="apidocCodePre">function has(obj, prop) {
     return hasOwn.call(obj, prop);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+createParser = require("./parser"),
+fs = require("fs"),
+StringDecoder = require('string_decoder').StringDecoder,
+hasIsPaused = !!stream.Transform.prototype.isPaused;
+
+function ParserStream(options) {
+options = options || {};
+options.objectMode = extended.<span class="apidocCodeKeywordSpan">has</span>(options, "objectMode") ? options.objectMode
+ : true;
+stream.Transform.call(this, options);
+this.lines = "";
+this.decoder = new StringDecoder();
+this._parsedHeaders = false;
+this._rowCount = -1;
+this._emitData = false;
+var delimiter;
+...</pre></li>
     </ul>
 
 
@@ -1869,7 +2346,23 @@ writableStream = fs.createWriteStream("my.csv");
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isArray() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    discardUnmappedColumns = this._discardUnmappedColumns,
+    strictColumnHandling = this._strictColumnHandling,
+    self = this;
+
+function headerHandler(err, headers) {
+    if (err) {
+        cb(err);
+    } else if (extended.<span class="apidocCodeKeywordSpan">isArray</span>(headers)) {
+        var headersLength = headers.length,
+            orig = self.__transform;
+        self.__transform = function (data, cb) {
+            var ret = {}, i = -1, val;
+            if (data.length &gt; headersLength) {
+                if (discardUnmappedColumns) {
+                    data.splice(headersLength);
+...</pre></li>
     </ul>
 
 
@@ -1884,7 +2377,24 @@ writableStream = fs.createWriteStream("my.csv");
     <li>description and source-code<pre class="apidocCodePre">function isBoolean(obj) {
     return obj === true || obj === false || toStr.call(obj) === "[object Boolean]";
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+__endEmitted: false,
+
+__emittedData: false,
+
+__handleLine: function __parseLineData(line, index, ignore, next) {
+    var ignoreEmpty = this._ignoreEmpty, self = this;
+    if (extended.<span class="apidocCodeKeywordSpan">isBoolean</span>(ignoreEmpty) &amp;&amp; ignoreEmpty &amp;&amp; (!line ||
+EMPTY.test(line.join("")))) {
+        return next(null, null);
+    }
+    if (!ignore) {
+        this.__transform(line, function (err, line) {
+            if (err) {
+                next(err);
+            } else {
+...</pre></li>
     </ul>
 
 
@@ -1975,7 +2485,23 @@ writableStream = fs.createWriteStream("my.csv");
     <li>description and source-code<pre class="apidocCodePre">isFunction = function (obj) {
     return toStr.call(obj) === '[object Function]';
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }
+    });
+},
+
+__transform: defaultTransform,
+
+transform: function (cb) {
+    if (!extended.<span class="apidocCodeKeywordSpan">isFunction</span>(cb)) {
+        this.emit("error", new TypeError("fast-csv.FormatterStream#transform requires a function"));
+    }
+    if (cb.length === 2) {
+        this.__transform = cb;
+    } else {
+        this.__transform = function (data, next) {
+            next(null, cb(data));
+...</pre></li>
     </ul>
 
 
@@ -3027,12 +3553,482 @@ function(err, data){
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fast-csv.fromPath" id="apidoc.module.fast-csv.fromPath">module fast-csv.fromPath</a></h1>
+<h1><a href="#apidoc.module.fast-csv.formatter" id="apidoc.module.fast-csv.formatter">module fast-csv.formatter</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.fast-csv.fromPath.fromPath" id="apidoc.element.fast-csv.fromPath.fromPath">
-        function <span class="apidocSignatureSpan">fast-csv.</span>fromPath
+        <a href="#apidoc.element.fast-csv.formatter.checkHeaders" id="apidoc.element.fast-csv.formatter.checkHeaders">
+        function <span class="apidocSignatureSpan">fast-csv.formatter.</span>checkHeaders
+        <span class="apidocSignatureSpan">(stream, item)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function checkHeaders(stream, item) {
+    var headers, ret = true;
+    if (!stream.parsedHeaders) {
+        stream.parsedHeaders = true;
+        headers = stream.headers = gatherHeaders(item);
+        stream.headersLength = headers.length;
+    }
+    if (!stream.hasWrittenHeaders) {
+        stream.totalCount++;
+        stream.push(new Buffer(stream.formatter(stream.headers, true), "utf8"));
+        stream.hasWrittenHeaders = true;
+        ret = isHashArray(item) || !isArray(item);
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.formatter.createFormatter" id="apidoc.element.fast-csv.formatter.createFormatter">
+        function <span class="apidocSignatureSpan">fast-csv.formatter.</span>createFormatter
+        <span class="apidocSignatureSpan">(options, stream)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createFormatter(options, stream) {
+    options = options || {};
+    var delimiter = options.delimiter || ",",
+        ESCAPE_REGEXP = new RegExp("[" + delimiter + escape(options.rowDelimiter || LINE_BREAK) + "']"),
+        QUOTE = options.quote || '"',
+        ESCAPE = options.escape || '"',
+        REPLACE_REGEXP = new RegExp(QUOTE, "g"),
+        quoteColumns = has(options, "quoteColumns") ? options.quoteColumns : false,
+        quoteHeaders = has(options, "quoteHeaders") ? options.quoteHeaders : quoteColumns,
+        shouldQuote = createQuoteChecker(stream, quoteColumns, quoteHeaders);
+
+
+    function escapeField(field, index, isHeader) {
+        var escape;
+        field = field.replace(/\0/g, '');
+        if ((escape = field.indexOf(QUOTE) !== -1)) {
+            field = field.replace(REPLACE_REGEXP, ESCAPE + QUOTE);
+            escape = true;
+        } else {
+            escape = field.search(ESCAPE_REGEXP) !== -1;
+        }
+        escape = escape || shouldQuote(index, isHeader);
+        if (escape) {
+            field = [QUOTE + field + QUOTE];
+        } else {
+            field = [field];
+        }
+        return field.join("");
+    }
+
+    return function escapeFields(fields, isHeader) {
+        var i = -1, l = fields.length, ret = [], field;
+        while (++i &lt; l) {
+            field = fields[i];
+            field = (isUndefinedOrNull(field) ? "" : field) + "";
+            ret.push(escapeField(field, i, isHeader));
+        }
+        return ret.join(delimiter);
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.formatter.defaultTransform" id="apidoc.element.fast-csv.formatter.defaultTransform">
+        function <span class="apidocSignatureSpan">fast-csv.formatter.</span>defaultTransform
+        <span class="apidocSignatureSpan">(row, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function defaultTransform(row, cb) {
+    return cb(null, row);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.formatter.transformItem" id="apidoc.element.fast-csv.formatter.transformItem">
+        function <span class="apidocSignatureSpan">fast-csv.formatter.</span>transformItem
+        <span class="apidocSignatureSpan">(stream, item)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function transformItem(stream, item) {
+    var ret;
+    if (isArray(item)) {
+        if (isHashArray(item)) {
+            ret = transformHashArrayData(stream, item);
+        } else {
+            ret = transformArrayData(stream, item);
+        }
+    } else {
+        ret = transformHashData(stream, item);
+    }
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.formatter_stream" id="apidoc.module.fast-csv.formatter_stream">module fast-csv.formatter_stream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.formatter_stream.formatter_stream" id="apidoc.element.fast-csv.formatter_stream.formatter_stream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>formatter_stream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CsvTransformStream(options) {
+    options = options || {};
+    options.objectMode = true;
+
+    if (has(options, "transform")) {
+        // remove so its not set to _transform in Transform constructor
+        options.consumerTransform = options.transform;
+        delete options.transform;
+    }
+
+    Transform.call(this, options);
+    this.formatter = createFormatter(options, this);
+    this.rowDelimiter = options.rowDelimiter || "\n";
+    var hasHeaders = has(options, "headers") ? !!options.headers : null,
+        headers = (hasHeaders &amp;&amp; isArray(options.headers)) ? options.headers : null;
+    this.hasHeaders = hasHeaders;
+    this.headers = headers;
+    if (hasHeaders) {
+        if (headers) {
+            this.parsedHeaders = true;
+            this.headersLength = headers.length;
+        } else {
+            this.parsedHeaders = false;
+        }
+    }
+    this.hasWrittenHeaders = hasHeaders ? false : true;
+    this.includeEndRowDelimiter = !!options.includeEndRowDelimiter,
+    has(options, "consumerTransform") &amp;&amp; this.transform(options.consumerTransform);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.formatter_stream.super_" id="apidoc.element.fast-csv.formatter_stream.super_">
+        function <span class="apidocSignatureSpan">fast-csv.formatter_stream.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Transform(options) {
+  if (!(this instanceof Transform))
+    return new Transform(options);
+
+  Duplex.call(this, options);
+
+  this._transformState = new TransformState(this);
+
+  var stream = this;
+
+  // start out asking for a readable event once data is transformed.
+  this._readableState.needReadable = true;
+
+  // we have implemented the _read method, and done the other things
+  // that Readable wants before the first _read call, so unset the
+  // sync guard flag.
+  this._readableState.sync = false;
+
+  if (options) {
+    if (typeof options.transform === 'function')
+      this._transform = options.transform;
+
+    if (typeof options.flush === 'function')
+      this._flush = options.flush;
+  }
+
+  // When the writable side finishes, then flush out anything remaining.
+  this.once('prefinish', function() {
+    if (typeof this._flush === 'function')
+      this._flush(function(er) {
+        done(stream, er);
+      });
+    else
+      done(stream);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.formatter_stream.prototype" id="apidoc.module.fast-csv.formatter_stream.prototype">module fast-csv.formatter_stream.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.formatter_stream.prototype.__transform" id="apidoc.element.fast-csv.formatter_stream.prototype.__transform">
+        function <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>__transform
+        <span class="apidocSignatureSpan">(row, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function defaultTransform(row, cb) {
+    return cb(null, row);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+headersLength: 0,
+
+totalCount: 0,
+
+_transform: function (item, encoding, cb) {
+    var self = this;
+    this.<span class="apidocCodeKeywordSpan">__transform</span>(item, function (err, item) {
+        if (err) {
+            cb(err);
+        } else {
+            if (checkHeaders(self, item)) {
+                self.push(new Buffer(transformItem(self, item), "utf8"));
+            }
+            cb();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.formatter_stream.prototype._flush" id="apidoc.element.fast-csv.formatter_stream.prototype._flush">
+        function <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>_flush
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_flush = function (cb) {
+    if (this.includeEndRowDelimiter) {
+        this.push(this.rowDelimiter);
+    }
+    cb();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.formatter_stream.prototype._transform" id="apidoc.element.fast-csv.formatter_stream.prototype._transform">
+        function <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>_transform
+        <span class="apidocSignatureSpan">(item, encoding, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_transform = function (item, encoding, cb) {
+    var self = this;
+    this.__transform(item, function (err, item) {
+        if (err) {
+            cb(err);
+        } else {
+            if (checkHeaders(self, item)) {
+                self.push(new Buffer(transformItem(self, item), "utf8"));
+            }
+            cb();
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.formatter_stream.prototype.transform" id="apidoc.element.fast-csv.formatter_stream.prototype.transform">
+        function <span class="apidocSignatureSpan">fast-csv.formatter_stream.prototype.</span>transform
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transform = function (cb) {
+    if (!extended.isFunction(cb)) {
+        this.emit("error", new TypeError("fast-csv.FormatterStream#transform requires a function"));
+    }
+    if (cb.length === 2) {
+        this.__transform = cb;
+    } else {
+        this.__transform = function (data, next) {
+            next(null, cb(data));
+        };
+    }
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+be provided to validate and emitted as a row.
+
+```javascript
+var stream = fs.createReadStream("my.csv");
+
+csv
+.fromStream(stream)
+.<span class="apidocCodeKeywordSpan">transform</span>(function(data){
+    return data.reverse(); //reverse each row.
+})
+.on("data", function(data){
+    console.log(data);
+})
+.on("end", function(){
+    console.log("done");
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.parse" id="apidoc.module.fast-csv.parse">module fast-csv.parse</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parse.parse" id="apidoc.element.fast-csv.parse.parse">
+        function <span class="apidocSignatureSpan">fast-csv.</span>parse
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function csv() {
+    return parser.apply(void 0, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**events**
+
+* `data`: Emitted when a record is parsed.
+* `data-invalid`: Emitted if there was invalid row encounted, **only emitted if the `validate` function is used or `strictColumnHandling
+=true`**.
+* `data`: Emitted with the object or `stringified` version if the `objectMode` is set to `false`.
+
+**`([options])` or `.<span class="apidocCodeKeywordSpan">parse</span>(options)`**
+
+If you use `fast-csv` as a function it returns a transform stream that can be piped into.
+
+```javascript
+var stream = fs.createReadStream("my.csv");
+
+var csvStream = csv()
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parse.createReadStream" id="apidoc.element.fast-csv.parse.createReadStream">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>createReadStream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createWriteStream(options) {
+    return new CsvTransformStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* `data`: Emitted with the object or `stringified` version if the `objectMode` is set to `false`.
+
+**`([options])` or `.parse(options)`**
+
+If you use `fast-csv` as a function it returns a transform stream that can be piped into.
+
+```javascript
+var stream = fs.<span class="apidocCodeKeywordSpan">createReadStream</span>("my.csv");
+
+var csvStream = csv()
+.on("data", function(data){
+     console.log(data);
+})
+.on("end", function(){
+     console.log("done");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parse.createWriteStream" id="apidoc.element.fast-csv.parse.createWriteStream">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>createWriteStream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createWriteStream(options) {
+    return new CsvTransformStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Formatting Functions
+
+**`createWriteStream(options)` or `.format(options)`**
+
+This is the lowest level of the write methods, it creates a stream that can be used to create a CSV of unknown size and pipe to
+an output CSV.
+
+```javascript
+var csvStream = csv.<span class="apidocCodeKeywordSpan">createWriteStream</span>({headers: true}),
+    writableStream = fs.createWriteStream("my.csv");
+
+writableStream.on("finish", function(){
+  console.log("DONE!");
+});
+
+csvStream.pipe(writableStream);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parse.format" id="apidoc.element.fast-csv.parse.format">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>format
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createWriteStream(options) {
+    return new CsvTransformStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//Generated CSV
+//a,a,b,b,c,c
+//a1,a2,b1,b2,c1,c2
+```
+
+### Formatting Functions
+
+**`createWriteStream(options)` or `.<span class="apidocCodeKeywordSpan">format</span>(options)`**
+
+This is the lowest level of the write methods, it creates a stream that can be used to create a CSV of unknown size and pipe to
+an output CSV.
+
+```javascript
+var csvStream = csv.createWriteStream({headers: true}),
+writableStream = fs.createWriteStream("my.csv");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parse.fromPath" id="apidoc.element.fast-csv.parse.fromPath">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>fromPath
         <span class="apidocSignatureSpan">(location, options)</span>
         </a>
     </h2>
@@ -3060,15 +4056,10 @@ csv
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fast-csv.fromStream" id="apidoc.module.fast-csv.fromStream">module fast-csv.fromStream</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.fast-csv.fromStream.fromStream" id="apidoc.element.fast-csv.fromStream.fromStream">
-        function <span class="apidocSignatureSpan">fast-csv.</span>fromStream
+        <a href="#apidoc.element.fast-csv.parse.fromStream" id="apidoc.element.fast-csv.parse.fromStream">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>fromStream
         <span class="apidocSignatureSpan">(stream, options)</span>
         </a>
     </h2>
@@ -3096,15 +4087,10 @@ csv
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fast-csv.fromString" id="apidoc.module.fast-csv.fromString">module fast-csv.fromString</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.fast-csv.fromString.fromString" id="apidoc.element.fast-csv.fromString.fromString">
-        function <span class="apidocSignatureSpan">fast-csv.</span>fromString
+        <a href="#apidoc.element.fast-csv.parse.fromString" id="apidoc.element.fast-csv.parse.fromString">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>fromString
         <span class="apidocSignatureSpan">(string, options)</span>
         </a>
     </h2>
@@ -3135,33 +4121,10 @@ var CSV_STRING = 'a,b\n' +
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fast-csv.toString" id="apidoc.module.fast-csv.toString">module fast-csv.toString</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.fast-csv.toString.toString" id="apidoc.element.fast-csv.toString.toString">
-        function <span class="apidocSignatureSpan">fast-csv.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fast-csv.write" id="apidoc.module.fast-csv.write">module fast-csv.write</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.fast-csv.write.write" id="apidoc.element.fast-csv.write.write">
-        function <span class="apidocSignatureSpan">fast-csv.</span>write
+        <a href="#apidoc.element.fast-csv.parse.write" id="apidoc.element.fast-csv.parse.write">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>write
         <span class="apidocSignatureSpan">(arr, options, ws)</span>
         </a>
     </h2>
@@ -3199,15 +4162,10 @@ parser
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fast-csv.writeToBuffer" id="apidoc.module.fast-csv.writeToBuffer">module fast-csv.writeToBuffer</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.fast-csv.writeToBuffer.writeToBuffer" id="apidoc.element.fast-csv.writeToBuffer.writeToBuffer">
-        function <span class="apidocSignatureSpan">fast-csv.</span>writeToBuffer
+        <a href="#apidoc.element.fast-csv.parse.writeToBuffer" id="apidoc.element.fast-csv.parse.writeToBuffer">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>writeToBuffer
         <span class="apidocSignatureSpan">(arr, options, cb)</span>
         </a>
     </h2>
@@ -3234,15 +4192,10 @@ parser
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fast-csv.writeToPath" id="apidoc.module.fast-csv.writeToPath">module fast-csv.writeToPath</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.fast-csv.writeToPath.writeToPath" id="apidoc.element.fast-csv.writeToPath.writeToPath">
-        function <span class="apidocSignatureSpan">fast-csv.</span>writeToPath
+        <a href="#apidoc.element.fast-csv.parse.writeToPath" id="apidoc.element.fast-csv.parse.writeToPath">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>writeToPath
         <span class="apidocSignatureSpan">(path, arr, options)</span>
         </a>
     </h2>
@@ -3271,15 +4224,10 @@ csv
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fast-csv.writeToStream" id="apidoc.module.fast-csv.writeToStream">module fast-csv.writeToStream</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.fast-csv.writeToStream.writeToStream" id="apidoc.element.fast-csv.writeToStream.writeToStream">
-        function <span class="apidocSignatureSpan">fast-csv.</span>writeToStream
+        <a href="#apidoc.element.fast-csv.parse.writeToStream" id="apidoc.element.fast-csv.parse.writeToStream">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>writeToStream
         <span class="apidocSignatureSpan">(ws, arr, options)</span>
         </a>
     </h2>
@@ -3307,15 +4255,10 @@ csv
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.fast-csv.writeToString" id="apidoc.module.fast-csv.writeToString">module fast-csv.writeToString</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.fast-csv.writeToString.writeToString" id="apidoc.element.fast-csv.writeToString.writeToString">
-        function <span class="apidocSignatureSpan">fast-csv.</span>writeToString
+        <a href="#apidoc.element.fast-csv.parse.writeToString" id="apidoc.element.fast-csv.parse.writeToString">
+        function <span class="apidocSignatureSpan">fast-csv.parse.</span>writeToString
         <span class="apidocSignatureSpan">(arr, options, cb)</span>
         </a>
     </h2>
@@ -3355,6 +4298,849 @@ csv.<span class="apidocCodeKeywordSpan">writeToString</span>(
 function(err, data){
 ...</pre></li>
     </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.parser_stream" id="apidoc.module.fast-csv.parser_stream">module fast-csv.parser_stream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.parser_stream" id="apidoc.element.fast-csv.parser_stream.parser_stream">
+        function <span class="apidocSignatureSpan">fast-csv.</span>parser_stream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserStream(options) {
+    options = options || {};
+    options.objectMode = extended.has(options, "objectMode") ? options.objectMode : true;
+    stream.Transform.call(this, options);
+    this.lines = "";
+    this.decoder = new StringDecoder();
+    this._parsedHeaders = false;
+    this._rowCount = -1;
+    this._emitData = false;
+    var delimiter;
+    if (extended.has(options, "delimiter")) {
+        delimiter = options.delimiter;
+        if (delimiter.length &gt; 1) {
+            throw new Error("delimiter option must be one character long");
+        }
+        delimiter = extended.escape(delimiter);
+    } else {
+        delimiter = DEFAULT_DELIMITER;
+    }
+    options.delimiter = delimiter;
+    this.parser = createParser(options);
+    this._headers = options.headers;
+    this._renameHeaders = options.renameHeaders;
+    this._ignoreEmpty = options.ignoreEmpty;
+    this._discardUnmappedColumns = options.discardUnmappedColumns;
+    this._strictColumnHandling = options.strictColumnHandling;
+    this.__objectMode = options.objectMode;
+    this.__buffered = [];
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.super_" id="apidoc.element.fast-csv.parser_stream.super_">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Transform(options) {
+  if (!(this instanceof Transform))
+    return new Transform(options);
+
+  Duplex.call(this, options);
+
+  this._transformState = new TransformState(this);
+
+  var stream = this;
+
+  // start out asking for a readable event once data is transformed.
+  this._readableState.needReadable = true;
+
+  // we have implemented the _read method, and done the other things
+  // that Readable wants before the first _read call, so unset the
+  // sync guard flag.
+  this._readableState.sync = false;
+
+  if (options) {
+    if (typeof options.transform === 'function')
+      this._transform = options.transform;
+
+    if (typeof options.flush === 'function')
+      this._flush = options.flush;
+  }
+
+  // When the writable side finishes, then flush out anything remaining.
+  this.once('prefinish', function() {
+    if (typeof this._flush === 'function')
+      this._flush(function(er) {
+        done(stream, er);
+      });
+    else
+      done(stream);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.fast-csv.parser_stream.prototype" id="apidoc.module.fast-csv.parser_stream.prototype">module fast-csv.parser_stream.prototype</a></h1>
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.__doFlush" id="apidoc.element.fast-csv.parser_stream.prototype.__doFlush">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__doFlush
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__doFlush = function (callback) {
+    try {
+        callback();
+    } catch (e) {
+        callback(e);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _flush: function (callback) {
+var self = this;
+if (this.lines) {
+    this._parse(this.lines, false, function (err) {
+        if (err) {
+            callback(err);
+        } else if (!self.isStreamPaused()) {
+            self.<span class="apidocCodeKeywordSpan">__doFlush</span>(callback);
+        } else {
+            self.__pausedDone = function () {
+                self.__doFlush(callback);
+            };
+        }
+    });
+} else {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.__emitRecord" id="apidoc.element.fast-csv.parser_stream.prototype.__emitRecord">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__emitRecord
+        <span class="apidocSignatureSpan">(dataRow, count)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__emitRecord = function (dataRow, count) {
+    if (this._emitData) {
+        this.push(this.__objectMode ? dataRow : JSON.stringify(dataRow));
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            if (row) {
+self.__handleLine(row, (count = ++self._rowCount), false, function (err, dataRow) {
+    if (err) {
+        cb(err);
+    } else {
+        if (dataRow) {
+            if (!self.isStreamPaused()) {
+                self.<span class="apidocCodeKeywordSpan">__emitRecord</span>(dataRow, count);
+            } else {
+                self.__buffered.push([dataRow, count]);
+            }
+        } else {
+            count = --self._rowCount;
+        }
+        cb();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.__flushPausedBuffer" id="apidoc.element.fast-csv.parser_stream.prototype.__flushPausedBuffer">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__flushPausedBuffer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__flushPausedBuffer = function () {
+    var buffered = this.__buffered, l = buffered.length;
+    if (l) {
+        var entry;
+        while (buffered.length) {
+            entry = buffered.shift();
+            this.__emitRecord(entry[0], entry[1]);
+            //handle case where paused is called while emitting data
+            if (this.isStreamPaused()) {
+                return;
+            }
+        }
+        buffered.length = 0;
+    }
+    if (this.__pausedDone) {
+        var done = this.__pausedDone;
+        this.__pausedDone = null;
+        done();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }
+    } else {
+        if (!hasIsPaused) {
+            if (event === "pause") {
+                this.__paused = true;
+            } else if (event === "resume") {
+                this.__paused = false;
+                this.<span class="apidocCodeKeywordSpan">__flushPausedBuffer</span>();
+            }
+        }
+        spreadArgs(origEmit, arguments, this);
+    }
+},
+
+on: function (evt) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.__handleLine" id="apidoc.element.fast-csv.parser_stream.prototype.__handleLine">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__handleLine
+        <span class="apidocSignatureSpan">(line, index, ignore, next)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __parseLineData(line, index, ignore, next) {
+    var ignoreEmpty = this._ignoreEmpty, self = this;
+    if (extended.isBoolean(ignoreEmpty) &amp;&amp; ignoreEmpty &amp;&amp; (!line || EMPTY.test(line.join("")))) {
+        return next(null, null);
+    }
+    if (!ignore) {
+        this.__transform(line, function (err, line) {
+            if (err) {
+                next(err);
+            } else {
+                self.__validate(line, function (err, isValid, reason) {
+                    if (err) {
+                        next(err);
+                    } else if (isValid) {
+                        next(null, line);
+                    } else {
+                        self.emit("data-invalid", line, index, reason);
+                        next(null, null);
+                    }
+                });
+            }
+        });
+    } else {
+        return next(null, line);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+},
+
+__processRows: function (rows, data, cb) {
+    var self = this, count;
+    extended.asyncEach(rows, function (row, cb) {
+        if (row) {
+            self.<span class="apidocCodeKeywordSpan">__handleLine</span>(row, (count = ++self._rowCount), false, function (err,
+dataRow) {
+                if (err) {
+                    cb(err);
+                } else {
+                    if (dataRow) {
+                        if (!self.isStreamPaused()) {
+                            self.__emitRecord(dataRow, count);
+                        } else {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.__processHeaders" id="apidoc.element.fast-csv.parser_stream.prototype.__processHeaders">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__processHeaders
+        <span class="apidocSignatureSpan">(rows, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__processHeaders = function (rows, cb) {
+    var headers = this._headers,
+        renameHeaders = this._renameHeaders,
+        discardUnmappedColumns = this._discardUnmappedColumns,
+        strictColumnHandling = this._strictColumnHandling,
+        self = this;
+
+    function headerHandler(err, headers) {
+        if (err) {
+            cb(err);
+        } else if (extended.isArray(headers)) {
+            var headersLength = headers.length,
+                orig = self.__transform;
+            self.__transform = function (data, cb) {
+                var ret = {}, i = -1, val;
+                if (data.length &gt; headersLength) {
+                    if (discardUnmappedColumns) {
+                        data.splice(headersLength);
+                    } else if (strictColumnHandling) {
+                        self.emit("data-invalid", data);
+                        return orig(null, cb);
+                    } else {
+                        self.emit("error", new Error("Unexpected Error: column header mismatch expected: " + headersLength + " columns
+ got: " + data.length));
+                        return orig(null, cb);
+                    }
+                } else if (strictColumnHandling &amp;&amp; (data.length &lt; headersLength)) {
+                    self.emit("data-invalid", data);
+                    return orig(null, cb);
+                }
+                while (++i &lt; headersLength) {
+                    if (isUndefined(headers[i])) {
+                        continue;
+                    }
+                    val = data[i];
+                    ret[headers[i]] = isUndefined(val) ? '' : val;
+                }
+
+                return orig(ret, cb);
+            };
+        }
+        self._parsedHeaders = true;
+        cb(null);
+    }
+
+    if (renameHeaders) {
+        if (Array.isArray(headers)) {
+            rows.shift();
+            headerHandler(null, headers);
+        } else {
+            self.emit("error", new Error("Error renaming headers: new headers must be provided in an array"));
+        }
+    } else if (extended.isBoolean(headers) &amp;&amp; headers) {
+        this.__handleLine(rows.shift(), 0, true, headerHandler);
+    } else {
+        headerHandler(null, headers);
+    }
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _parse: function _parseLine(data, hasMoreData, cb) {
+var rows, self = this;
+try {
+    data = this.parser(data, hasMoreData);
+    rows = data.rows;
+    if (rows.length) {
+        if (!this._parsedHeaders) {
+            this.<span class="apidocCodeKeywordSpan">__processHeaders</span>(rows, function (err) {
+                if (err) {
+                    cb(err);
+                } else {
+                    self.__processRows(rows, data, cb);
+                }
+            });
+        } else {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.__processRows" id="apidoc.element.fast-csv.parser_stream.prototype.__processRows">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__processRows
+        <span class="apidocSignatureSpan">(rows, data, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__processRows = function (rows, data, cb) {
+    var self = this, count;
+    extended.asyncEach(rows, function (row, cb) {
+        if (row) {
+            self.__handleLine(row, (count = ++self._rowCount), false, function (err, dataRow) {
+                if (err) {
+                    cb(err);
+                } else {
+                    if (dataRow) {
+                        if (!self.isStreamPaused()) {
+                            self.__emitRecord(dataRow, count);
+                        } else {
+                            self.__buffered.push([dataRow, count]);
+                        }
+                    } else {
+                        count = --self._rowCount;
+                    }
+                    cb();
+                }
+            });
+        }
+    }, function (err) {
+        if (err) {
+            cb(err);
+        } else {
+            cb(null, data.line);
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+rows = data.rows;
+if (rows.length) {
+    if (!this._parsedHeaders) {
+        this.__processHeaders(rows, function (err) {
+            if (err) {
+                cb(err);
+            } else {
+                self.<span class="apidocCodeKeywordSpan">__processRows</span>(rows, data, cb);
+            }
+        });
+    } else {
+        this.__processRows(rows, data, cb);
+    }
+} else {
+    cb(null, data.line);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.__removeBOM" id="apidoc.element.fast-csv.parser_stream.prototype.__removeBOM">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__removeBOM
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__removeBOM = function (data) {
+    // Catches EFBBBF (UTF-8 BOM) because the buffer-to-string
+    // conversion translates it to FEFF (UTF-16 BOM)
+    if (data &amp;&amp; typeof data == 'string' &amp;&amp; data.charCodeAt(0) == '0xFEFF') {
+        return data.slice(1);
+    }
+    return data;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+
+_transform: function (data, encoding, done) {
+    var lines = this.lines,
+        lineData = (lines + this.decoder.write(data)),
+        self = this;
+    if (lineData.length &gt; 1) {
+        lineData = this.<span class="apidocCodeKeywordSpan">__removeBOM</span>(lineData);
+        this._parse(lineData, true, function (err, lineData) {
+            if (err) {
+                done(err);
+            } else {
+                self.lines = lineData;
+                if (!self.isStreamPaused()) {
+                    done();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.__transform" id="apidoc.element.fast-csv.parser_stream.prototype.__transform">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__transform
+        <span class="apidocSignatureSpan">(data, next)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__transform = function (data, next) {
+    return next(null, data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+headersLength: 0,
+
+totalCount: 0,
+
+_transform: function (item, encoding, cb) {
+    var self = this;
+    this.<span class="apidocCodeKeywordSpan">__transform</span>(item, function (err, item) {
+        if (err) {
+            cb(err);
+        } else {
+            if (checkHeaders(self, item)) {
+                self.push(new Buffer(transformItem(self, item), "utf8"));
+            }
+            cb();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.__validate" id="apidoc.element.fast-csv.parser_stream.prototype.__validate">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>__validate
+        <span class="apidocSignatureSpan">(data, next)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__validate = function (data, next) {
+    return next(null, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return next(null, null);
+}
+if (!ignore) {
+    this.__transform(line, function (err, line) {
+        if (err) {
+            next(err);
+        } else {
+            self.<span class="apidocCodeKeywordSpan">__validate</span>(line, function (err, isValid, reason) {
+                if (err) {
+                    next(err);
+                } else if (isValid) {
+                    next(null, line);
+                } else {
+                    self.emit("data-invalid", line, index, reason);
+                    next(null, null);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype._flush" id="apidoc.element.fast-csv.parser_stream.prototype._flush">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>_flush
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_flush = function (callback) {
+    var self = this;
+    if (this.lines) {
+        this._parse(this.lines, false, function (err) {
+            if (err) {
+                callback(err);
+            } else if (!self.isStreamPaused()) {
+                self.__doFlush(callback);
+            } else {
+                self.__pausedDone = function () {
+                    self.__doFlush(callback);
+                };
+            }
+        });
+    } else {
+        if (!this.isStreamPaused()) {
+            this.__doFlush(callback);
+        } else {
+            this.__pausedDone = function () {
+                self.__doFlush(callback);
+            };
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype._parse" id="apidoc.element.fast-csv.parser_stream.prototype._parse">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>_parse
+        <span class="apidocSignatureSpan">(data, hasMoreData, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _parseLine(data, hasMoreData, cb) {
+    var rows, self = this;
+    try {
+        data = this.parser(data, hasMoreData);
+        rows = data.rows;
+        if (rows.length) {
+            if (!this._parsedHeaders) {
+                this.__processHeaders(rows, function (err) {
+                    if (err) {
+                        cb(err);
+                    } else {
+                        self.__processRows(rows, data, cb);
+                    }
+                });
+            } else {
+                this.__processRows(rows, data, cb);
+            }
+        } else {
+            cb(null, data.line);
+        }
+    } catch (e) {
+        cb(e);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    _transform: function (data, encoding, done) {
+var lines = this.lines,
+    lineData = (lines + this.decoder.write(data)),
+    self = this;
+if (lineData.length &gt; 1) {
+    lineData = this.__removeBOM(lineData);
+    this.<span class="apidocCodeKeywordSpan">_parse</span>(lineData, true, function (err, lineData) {
+        if (err) {
+            done(err);
+        } else {
+            self.lines = lineData;
+            if (!self.isStreamPaused()) {
+                done();
+            } else {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype._transform" id="apidoc.element.fast-csv.parser_stream.prototype._transform">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>_transform
+        <span class="apidocSignatureSpan">(data, encoding, done)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_transform = function (data, encoding, done) {
+    var lines = this.lines,
+        lineData = (lines + this.decoder.write(data)),
+        self = this;
+    if (lineData.length &gt; 1) {
+        lineData = this.__removeBOM(lineData);
+        this._parse(lineData, true, function (err, lineData) {
+            if (err) {
+                done(err);
+            } else {
+                self.lines = lineData;
+                if (!self.isStreamPaused()) {
+                    done();
+                } else {
+                    self.__pausedDone = done;
+                }
+            }
+        });
+    } else {
+        this.lines = lineData;
+        if (!this.isStreamPaused()) {
+            done();
+        } else {
+            this.__pausedDone = done;
+        }
+    }
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.emit" id="apidoc.element.fast-csv.parser_stream.prototype.emit">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>emit
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">emit = function (event) {
+    if (event === "end") {
+        if (!this.__endEmitted) {
+            this.__endEmitted = true;
+            spreadArgs(origEmit, ["end", ++this._rowCount], this);
+        }
+    } else {
+        if (!hasIsPaused) {
+            if (event === "pause") {
+                this.__paused = true;
+            } else if (event === "resume") {
+                this.__paused = false;
+                this.__flushPausedBuffer();
+            }
+        }
+        spreadArgs(origEmit, arguments, this);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+* Node 4 and 5 support.
+* Deprecating the `record` event.
+
+# v0.6.0
+
+* Removed try catch from emit to allow bubbling up of errors to process, if one is thrown [#93](https://github.com/C2FO/fast-csv
+/issues/93)
+    * This also fixed issue [#92](https://github.com/C2FO/fast-csv/issues/92) where a loop was entered when `this.<span class="apidocCodeKeywordSpan
+">emit</span>("error")` was called.
+* Added new tests
+
+# v0.5.7
+
+* Strict record handling [#53](https://github.com/C2FO/fast-csv/pull/53) - [@derjust](https://github.com/derjust)
+
+# v0.5.6
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.isStreamPaused" id="apidoc.element.fast-csv.parser_stream.prototype.isStreamPaused">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>isStreamPaused
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isStreamPaused = function () {
+    return this.__paused;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        extended.asyncEach(rows, function (row, cb) {
+if (row) {
+    self.__handleLine(row, (count = ++self._rowCount), false, function (err, dataRow) {
+        if (err) {
+            cb(err);
+        } else {
+            if (dataRow) {
+                if (!self.<span class="apidocCodeKeywordSpan">isStreamPaused</span>()) {
+                    self.__emitRecord(dataRow, count);
+                } else {
+                    self.__buffered.push([dataRow, count]);
+                }
+            } else {
+                count = --self._rowCount;
+            }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.on" id="apidoc.element.fast-csv.parser_stream.prototype.on">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>on
+        <span class="apidocSignatureSpan">(evt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function (evt) {
+    if (evt === "data" || evt === "readable") {
+        this._emitData = true;
+    }
+    spreadArgs(origOn, arguments, this);
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+If you use `fast-csv` as a function it returns a transform stream that can be piped into.
+
+```javascript
+var stream = fs.createReadStream("my.csv");
+
+var csvStream = csv()
+    .<span class="apidocCodeKeywordSpan">on</span>("data", function(data){
+         console.log(data);
+    })
+    .on("end", function(){
+         console.log("done");
+    });
+
+stream.pipe(csvStream);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.transform" id="apidoc.element.fast-csv.parser_stream.prototype.transform">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>transform
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transform = function (cb) {
+    if (!extended.isFunction(cb)) {
+        this.emit("error", new TypeError("fast-csv.Parser#transform requires a function"));
+    }
+    if (cb.length === 2) {
+        this.__transform = cb;
+    } else {
+        this.__transform = function (data, next) {
+            return next(null, cb(data));
+        };
+    }
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+be provided to validate and emitted as a row.
+
+```javascript
+var stream = fs.createReadStream("my.csv");
+
+csv
+.fromStream(stream)
+.<span class="apidocCodeKeywordSpan">transform</span>(function(data){
+    return data.reverse(); //reverse each row.
+})
+.on("data", function(data){
+    console.log(data);
+})
+.on("end", function(){
+    console.log("done");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.fast-csv.parser_stream.prototype.validate" id="apidoc.element.fast-csv.parser_stream.prototype.validate">
+        function <span class="apidocSignatureSpan">fast-csv.parser_stream.prototype.</span>validate
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validate = function (cb) {
+    if (!extended.isFunction(cb)) {
+        this.emit("error", new TypeError("fast-csv.Parser#validate requires a function"));
+    }
+    if (cb.length === 2) {
+        this.__validate = cb;
+    } else {
+        this.__validate = function (data, next) {
+            return next(null, cb(data));
+        };
+    }
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+will be emitted with the row and the index.
+
+```javascript
+var stream = fs.createReadStream("my.csv");
+
+csv
+.fromStream(stream, {headers : true})
+.<span class="apidocCodeKeywordSpan">validate</span>(function(data){
+    return data.age &lt; 50; //all persons must be under the age of 50
+})
+.on("data-invalid", function(data){
+    //do something with invalid row
+})
+.on("data", function(data){
+    console.log(data);
+...</pre></li>
+    </ul>
+
+
 
 
 </div>
