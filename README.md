@@ -1,4 +1,7 @@
-# api documentation for  [fast-csv (v2.4.0)](http://c2fo.github.com/fast-csv/index.html)  [![npm package](https://img.shields.io/npm/v/npmdoc-fast-csv.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-fast-csv) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-fast-csv.svg)](https://travis-ci.org/npmdoc/node-npmdoc-fast-csv)
+# npmdoc-fast-csv
+
+#### basic api documentation for  [fast-csv (v2.4.0)](http://c2fo.github.com/fast-csv/index.html)  [![npm package](https://img.shields.io/npm/v/npmdoc-fast-csv.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-fast-csv) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-fast-csv.svg)](https://travis-ci.org/npmdoc/node-npmdoc-fast-csv)
+
 #### CSV parser and writer
 
 [![NPM](https://nodei.co/npm/fast-csv.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fast-csv)
@@ -76,7 +79,8 @@
     "scripts": {
         "test": "grunt jshint it"
     },
-    "version": "2.4.0"
+    "version": "2.4.0",
+    "bin": {}
 }
 ```
 
